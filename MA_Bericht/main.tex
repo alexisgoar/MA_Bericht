@@ -1,0 +1,177 @@
+\documentclass[DIV=15,
+fleqn
+numbers=noenddot,
+headsepline,
+captions=tableabove,twoside, openright]{scrreprt}
+\usepackage{pgf,tikz}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[intlimits,slantedGreeks]{kpfonts}
+\usepackage[expansion=false]{microtype}
+\usepackage{bm}
+\usepackage[]{graphicx}
+\usepackage{psfrag}\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{color}
+\usepackage{colortbl, hhline}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{url}
+\usepackage{upgreek}
+\usepackage{multicol,caption}
+\usepackage[titletoc]{appendix}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{calc}
+\usepackage{epstopdf}
+\usepackage{units}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage[automark]{scrpage2}
+\usepackage{babelbib}
+\usepackage{tikz}
+%-----------------NEW PACKAGES from October2017--------%
+\usepackage[]{datetime2}
+
+%ausprobieren
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+%ausprobieren ende
+
+
+
+
+\pagestyle{scrplain}
+\clearscrheadfoot
+\ihead{}
+\chead{}
+\ohead{}
+\ifoot{}
+\cfoot[\pagemark]{\pagemark}
+\ofoot{}
+
+	
+
+\setkomafont{disposition}     {\normalfont\bfseries}
+\setkomafont{descriptionlabel}{\normalfont\bfseries}
+\setkomafont{pagehead}        {\normalfont}
+\setkomafont{caption}         {\normalfont\small}
+\setkomafont{captionlabel}    {\normalfont\small\bfseries}
+\setcapindent{0em}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\setcounter{topnumber}           {1}
+\setcounter{bottomnumber}        {1}
+\renewcommand{\floatpagefraction}{0.8}
+\renewcommand{\topfraction}      {0.8}
+\renewcommand{\bottomfraction}   {0.5}
+\renewcommand{\textfraction}     {0.15}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+%--------------------Command definitions--------------%
+\newcommand*{\mj}   {\mathrm{j}}
+\newcommand*{\me}   {\mathrm{e}}
+\newcommand*{\Div}  {\operatorname{div}}
+\newcommand*{\Rot}  {\operatorname{rot}}
+\newcommand*{\Grad} {\operatorname{grad}}
+\renewcommand*{\Re} {\operatorname{Re}}
+\renewcommand*{\Im} {\operatorname{Im}}
+
+
+\addto\captionsenglish{%
+	\renewcommand{\figurename}{Figure}%
+}
+
+
+\AtBeginDocument{\bbbbaddto{english} {btxifchangecaseoff}}
+\bibliographystyle{unsrt}
+\usepackage{titlesec}
+
+
+\usetikzlibrary{arrows}
+
+
+%------------------Date Settings------------------------%
+\DTMsetdatestyle{ddmmyyyy}
+
+\begin{document}
+%---------------------COVER------------------------------%
+\input{cover/cover}
+%-------------------FIRST PAGES-------------------------%
+
+\pagenumbering{Roman}
+\chapter*{Sperrvermerk}
+
+\chapter*{Declaration of Authorship}
+\chapter*{}
+\vspace*{8cm}
+\thispagestyle{empty}
+%------------------DEDICATION--------------------------------%
+\input{cover/Dedication}
+%--------------------Contents--------------------------------%
+\tableofcontents	
+%***********************************************
+%INTRODUCTION
+%***********************************************
+\chapter{Introduction}
+	\pagenumbering{arabic}
+	\pagestyle{scrheadings}
+	\clearscrheadfoot
+	\ihead{\headmark}
+	\ohead{\pagemark}
+	
+\chapter{Radar Fundamentals}\label{ch:basics}
+\input{fundamentals/Intro}
+\section{Radar Definitions}\label{bs:definitions}
+ \input{fundamentals/def}
+\section{Signal Model}\label{bs:signal}
+\section{Detection Theory}\label{bs:detection}
+\section{Ranging}\label{bs:ranging}
+\section{Doppler Ranging}\label{bs:dopplerRanging}
+\section{MIMO Radars}\label{bs:MIMO}
+\subsection{The Virtual Array Concept}
+\subsection{Space-Time Processing}
+\subsection{Azimuth-Range Detection}
+\chapter{Multi-Target Tracking}
+\section{The Kalman Filter}
+\section{Gating Techniques}
+\section{The Assignment Problem}
+\subsection{NN-approach}
+\subsection{PDA-approach}
+\subsection{JPDA-approach}
+\section{Track Life Stages}
+\section{Maneuver Detection and Adaptive Filtering}
+\chapter{Micro-Doppler Signatures}
+\chapter{Classification}
+\chapter{Results}
+\chapter{Summary and Outlook}
+\begin{appendices}
+\chapter{Symbols and Constants}
+\section*{General}
+\input{appendices/general}
+\section*{Latin alphabet}	
+\input{appendices/symbol}
+\section*{Greek alphabet}	
+\input{appendices/Greeksymbols}
+\section*{Constants}	
+\input{appendices/constants}
+\chapter{Mathematical Formulas}
+
+
+\end{appendices}
+\newpage
+\nocite{*}
+
+\bibliography{misreferencias}
+
+
+\newpage
+\end{document}
