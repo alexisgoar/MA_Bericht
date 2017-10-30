@@ -1,3 +1,9 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{huang_fmcw_2011}
+Yanchuan Huang, Paul~Victor Brennan, Dave Patrick, I.~Weller, Peters Roberts,
+  and K.~Hughes.
+\newblock {FMCW} {Based} {MIMO} {Imaging} {Radar} for {Maritime} {Navigation}.
+\newblock {\em Progress In Electromagnetics Research}, 115:327--342, 2011.
 
 \end{thebibliography}

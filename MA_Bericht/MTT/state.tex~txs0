@@ -1,0 +1,17 @@
+A \ac{lti} system can be described by by three variables, input, output and the state variable. In the case of radar, the state can be design to contain several attributes of single targets measured by the radar such as range, range-rate and azimuth angle. Since we desire to determines a target's position and velocity in Cartesian coordinates, the state vector 
+\begin{equation}
+	\vec{x} = \begin{bmatrix}
+	x \\ y \\ v_x \\ v_y
+	\end{bmatrix}\\,
+\end{equation}
+has been chosen. The continuous-time linear system can then be written as
+\begin{equation}
+	\dot{\vec{x}}(t) = \matrix{A}(t)\vec{x}(t)+ \matrix{B}(t)\vec{u}(t) + \tilde{\vec{v}}(t)\\,
+\end{equation}
+where $t$ represents time and 
+\begin{description}[align=left,labelwidth=1cm]
+	\item[$\vec{x}$] is the state vector of dimension $n_x$ and $\dot{\vec{x}}$ its time derivative
+	\item[$\vec{u}$]a
+	\item[$\tilde{\vec{v}}$]
+	\item[$\matrix{A}$,$\matrix{B}$]
+\end{description}

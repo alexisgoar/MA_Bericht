@@ -1,0 +1,45 @@
+For the following analyses a \Ac{fmcw} Radar is taken into consideration. The TX array elements transmit a \Ac{fmcw} chirp signal, that can be modeled in as
+\begin{equation}
+	s_T(t) = \exp[\mj(2\pi f_ct+\pi kt^2)]\\,
+\end{equation}
+for $-T_c/2 \leq t \leq T_c/2$, where $T_c$ is the chirp duration, $f_c$ the carrier frequency and the chirp rate $k$ is defined by
+\begin{equation}
+	k = \pm B/T_c\\.
+\end{equation}
+Under far-field condition, the return delay between a virtual element at $x_{ij}$ and a scatterer is given by
+\begin{equation}
+	\Delta t_{ij} = \frac{2R}{c_0} + \frac{2x_{ij}\sin\theta}{c_0}\\,
+\end{equation}
+where $R$ and $\theta$ describe the location of the scatterer, $R$ being the rang and $\theta$ the angle with respect to boresight. The received signal 
+\begin{equation}
+	s_R^{ij}(t) = As_t(t-\Delta t_{ij})
+\end{equation}
+After the signal is received, it is down-converted by multiplying it with a replica of the transmitted signal. After low-pass filtering, the processed signal can be modeled as 
+\begin{equation}
+	u_{ij}(t) = s_R^{ij}s_T(t) = A\exp[\mj(2\pi k \Delta t_{ij}t-\pi k\Delta  t_{ij}^2 + 2\pi f_c \Delta t_{ij})]
+\end{equation}
+The sampled form of the \ac{if} signal given $N$ samples can be expressed as
+\begin{equation}
+	u_{ij}[n] = A\exp[\mj(\phi+2\pi\Psi_R n)]\\,
+\end{equation}
+with $\Psi_R = k\Delta t_{ij}\frac{T_c}{N} $,the normalized frequency containing the range information and $\phi = -\pi k\Delta  t_{ij}^2 + 2\pi f_c \Delta t_{ij} $ contains the phase information. This expression can be generalized to \ac{mimo} radar, with $M$ targets either static or dynamic, for the $k$-th observation interval by
+\begin{equation}\label{eq:signal}
+	u_{k}[n,n_C,n_A] = \sum_{m=0}^{M}A_m\exp[\mj2\pi(\phi_m+\Psi_{R,m}n+\Psi_{D,m}n_C+\Psi_{\theta,m}n_A)] + w[n,n_C,n_A]
+\end{equation}
+where $\Psi_D = \frac{2T_cf_0}{c_0}v_R$ and $\Psi_\theta =\sin(\theta)/2 $ are the normalized frequencies containing the information about range-rate and azimuth. Moreover, $w[n,n_C,n_A]$ is the present additive white Gaussian measurement noise. The parameters $n$, $n_C$ and $n_A$ represent which, sample chirp and antenna is being taken into account. Please note that $\phi_m$ does not correspond to $\phi$.
+
+The information collected from \cref{eq:signal} is usually arrange into a three-dimensional data cube as presented in \cref{fig:datacube}. Here the dimensions correspond to sample number, transmit-receive channel and chirp number. 
+
+\begin{figure}[h]
+	\centering
+	\input{fundamentals_figs/blank.tex}
+	\caption{Data Cube}
+	\label{fig:datacube}
+\end{figure} 
+
+In order to estimate the spectrum of the received signal and so to determine the unknown parameters $R$, $v_R$ and $\theta$ for a given target, usually a three-dimensional \ac{fft} is applied to de \Ac{if} signal
+\begin{multline}
+\hat{P}_k(\Psi_R,\Psi_D\Psi_\theta) = \sum_{n}\sum_{n_C}\sum_{n_A} a_R[n] a_D[n_C] a_\theta[n_A]u_k[n,n_A,n_C]\\
+\times\exp(-\mj2\pi\Psi_Rn)\exp(-\mj2\pi\Psi_Dn_C)\exp(-\mj2\pi\Psi_\theta n_A) \rlap{,}
+\end{multline}
+however, this usually results in a bad estimation for the azimuth range. Specifics of the signal processing will be described in the following sections. 

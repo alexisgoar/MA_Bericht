@@ -37,7 +37,26 @@ captions=tableabove,twoside, openright]{scrreprt}
 \usepackage{tikz}
 %-----------------NEW PACKAGES from October2017--------%
 \usepackage[]{datetime2}
-
+\usepackage{enumitem}
+\setlist[description]{leftmargin=2cm,labelindent=2cm}
+\usepackage{acro}
+\DeclareAcronym{mimo}{
+	short = MIMO,
+	long = Multiple-Input Multiple-Output}
+\usepackage{cleveref}
+\DeclareAcronym{fmcw}{
+	short = FMCW,
+	long = Frequency-Modulated Continuous-Wave}
+\DeclareAcronym{if}{
+	short = IF , long =
+	intermediate frequency }
+\DeclareAcronym{fft}{
+	short = FFT , long = Fast Fourier Transform }
+\DeclareAcronym{mtt}{
+	short =MTT,
+    long = Multi-Target Tracking }
+\DeclareAcronym{lti}{
+	short = LTI , long = Linear Time Invariant}
 %ausprobieren
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
@@ -84,6 +103,12 @@ captions=tableabove,twoside, openright]{scrreprt}
 \newcommand*{\Grad} {\operatorname{grad}}
 \renewcommand*{\Re} {\operatorname{Re}}
 \renewcommand*{\Im} {\operatorname{Im}}
+\renewcommand{\Re}  {\operatorname{Re}}
+\renewcommand{\Im}  {\operatorname{Im}}
+\renewcommand{\vec}   [1]{\bm{#1}}
+\renewcommand{\matrix}[1]{\mathbf{#1}}
+\newcommand* {\snr} {\mathrm{SNR}}
+\newcommand{\Iog}  {\operatorname{log}}
 
 
 \addto\captionsenglish{%
@@ -132,23 +157,28 @@ captions=tableabove,twoside, openright]{scrreprt}
 \input{fundamentals/Intro}
 \section{Radar Definitions}\label{bs:definitions}
  \input{fundamentals/def}
+ \section{MIMO Array}\label{bs:MIMO}
+ \input{fundamentals/mimo}
 \section{Signal Model}\label{bs:signal}
-\section{Detection Theory}\label{bs:detection}
+\input{fundamentals/signal}
+
 \section{Ranging}\label{bs:ranging}
 \section{Doppler Ranging}\label{bs:dopplerRanging}
-\section{MIMO Radars}\label{bs:MIMO}
-\subsection{The Virtual Array Concept}
-\subsection{Space-Time Processing}
-\subsection{Azimuth-Range Detection}
+\section{Azimuth Estimation}
+\section{Detection Theory}\label{bs:detection}
+\chapter{Clustering}
 \chapter{Multi-Target Tracking}
-\section{The Kalman Filter}
-\section{Gating Techniques}
-\section{The Assignment Problem}
-\subsection{NN-approach}
-\subsection{PDA-approach}
-\subsection{JPDA-approach}
-\section{Track Life Stages}
-\section{Maneuver Detection and Adaptive Filtering}
+\input{MTT/intro}
+\section{State Variable Representation of an LTI System}\label{mtt:state}
+\input{MTT/state}
+\section{The Kalman Filter}\label{mtt:kalman}
+\section{Gating Techniques}\label{mtt:gating}
+\section{The Assignment Problem}\label{mtt:assign}
+\subsection{NN-approach}\label{mtt:nn}
+\subsection{PDA-approach}\label{mtt:pda}
+\subsection{JPDA-approach}\label{mtt:jpda}
+\section{Track Life Stages}\label{mtt:management}
+\section{Maneuver Detection and Adaptive Filtering}\label{mtt:maneuver}
 \chapter{Micro-Doppler Signatures}
 \chapter{Classification}
 \chapter{Results}
@@ -168,7 +198,6 @@ captions=tableabove,twoside, openright]{scrreprt}
 
 \end{appendices}
 \newpage
-\nocite{*}
 
 \bibliography{misreferencias}
 

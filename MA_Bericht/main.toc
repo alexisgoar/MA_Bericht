@@ -3,26 +3,26 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Radar Fundamentals}{3}
 \contentsline {section}{\numberline {2.1}Radar Definitions}{3}
-\contentsline {section}{\numberline {2.2}Signal Model}{4}
-\contentsline {section}{\numberline {2.3}Detection Theory}{4}
-\contentsline {section}{\numberline {2.4}Ranging}{4}
-\contentsline {section}{\numberline {2.5}Doppler Ranging}{4}
-\contentsline {section}{\numberline {2.6}MIMO Radars}{4}
-\contentsline {subsection}{\numberline {2.6.1}The Virtual Array Concept}{4}
-\contentsline {subsection}{\numberline {2.6.2}Space-Time Processing}{4}
-\contentsline {subsection}{\numberline {2.6.3}Azimuth-Range Detection}{4}
-\contentsline {chapter}{\numberline {3}Multi-Target Tracking}{5}
-\contentsline {section}{\numberline {3.1}The Kalman Filter}{5}
-\contentsline {section}{\numberline {3.2}Gating Techniques}{5}
-\contentsline {section}{\numberline {3.3}The Assignment Problem}{5}
-\contentsline {subsection}{\numberline {3.3.1}NN-approach}{5}
-\contentsline {subsection}{\numberline {3.3.2}PDA-approach}{5}
-\contentsline {subsection}{\numberline {3.3.3}JPDA-approach}{5}
-\contentsline {section}{\numberline {3.4}Track Life Stages}{5}
-\contentsline {section}{\numberline {3.5}Maneuver Detection and Adaptive Filtering}{5}
-\contentsline {chapter}{\numberline {4}Micro-Doppler Signatures}{7}
-\contentsline {chapter}{\numberline {5}Classification}{9}
-\contentsline {chapter}{\numberline {6}Results}{11}
-\contentsline {chapter}{\numberline {7}Summary and Outlook}{13}
-\contentsline {chapter}{Appendix \numberline {A}Symbols and Constants}{15}
-\contentsline {chapter}{Appendix \numberline {B}Mathematical Formulas}{17}
+\contentsline {section}{\numberline {2.2}MIMO Array}{4}
+\contentsline {section}{\numberline {2.3}Signal Model}{4}
+\contentsline {section}{\numberline {2.4}Ranging}{6}
+\contentsline {section}{\numberline {2.5}Doppler Ranging}{6}
+\contentsline {section}{\numberline {2.6}Azimuth Estimation}{6}
+\contentsline {section}{\numberline {2.7}Detection Theory}{6}
+\contentsline {chapter}{\numberline {3}Clustering}{7}
+\contentsline {chapter}{\numberline {4}Multi-Target Tracking}{9}
+\contentsline {section}{\numberline {4.1}State Variable Representation of an LTI System}{9}
+\contentsline {section}{\numberline {4.2}The Kalman Filter}{10}
+\contentsline {section}{\numberline {4.3}Gating Techniques}{10}
+\contentsline {section}{\numberline {4.4}The Assignment Problem}{10}
+\contentsline {subsection}{\numberline {4.4.1}NN-approach}{10}
+\contentsline {subsection}{\numberline {4.4.2}PDA-approach}{10}
+\contentsline {subsection}{\numberline {4.4.3}JPDA-approach}{10}
+\contentsline {section}{\numberline {4.5}Track Life Stages}{10}
+\contentsline {section}{\numberline {4.6}Maneuver Detection and Adaptive Filtering}{10}
+\contentsline {chapter}{\numberline {5}Micro-Doppler Signatures}{11}
+\contentsline {chapter}{\numberline {6}Classification}{13}
+\contentsline {chapter}{\numberline {7}Results}{15}
+\contentsline {chapter}{\numberline {8}Summary and Outlook}{17}
+\contentsline {chapter}{Appendix \numberline {A}Symbols and Constants}{19}
+\contentsline {chapter}{Appendix \numberline {B}Mathematical Formulas}{21}

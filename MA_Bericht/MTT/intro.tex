@@ -1,0 +1,10 @@
+After a correct detection and clustering of targets, the detections have to be assigned to tracks which are to be updated over time. In this case, it is done to create a history of each of the target's range, azimuth angle and Doppler velocity. In a further step, the Micro-Doppler signature can be extracted from each of the tracks and be used as an input for the classifiers. More over, by keeping track of the measurements corresponding to each track, one can produce an estimate of future positions of the target, which result into a more accurate measurement of the targets position. This process is called \ac{mtt}.
+
+Each track of a \ac{mtt}-algorithm contains a Kalman Filter (\cref{mtt:kalman}) which is a commonly used filter to predict future states and to calculate variables that cannot be measured directly. At each step, gating (\cref{mtt:gating}) is applied to each of the new detections to reduce the scope of detections that can be assigned to a given track at each time step $k$. After gating, the detections calculated in a given step are assigned to each of the tracks. For this, the assignment problem has to be solved (\cref{mtt:assign}). After the assignment has been done, the state of each of the tracks is updated according to pre-established rules (\cref{mtt:management}). The whole process used for the \ac{mtt} is illustrated in \cref{fig:mtt}.
+\begin{figure}[h]
+	\centering
+	\input{fundamentals_figs/blank.tex}
+	\caption{MTT-process}
+	\label{fig:mtt}
+\end{figure} 
+Given that usually a constant-velocity model is assumed, a special model needs to be implemented to consider the cases where the target has an (unknown) acceleration. This is issue is handled in \cref{mtt:maneuver}.
