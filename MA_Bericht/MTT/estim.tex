@@ -1,0 +1,48 @@
+The filtering equation is given by
+\begin{equation}
+	\vec{x}(n|n) = \vec{x}_s(n) = \vec{x}(n|n-1) + \matrix{W}(n)\vec{v}(n)\\,
+\end{equation}
+where
+\begin{description}
+	\item[$\vec{x}_s(n)$] is the smoothed output of the Kalman filter
+	\item[$\matrix{W}(n)$] are the dynamically computed filter gains
+	\item[$\vec{v}(n)$] is the innovation vector 
+\end{description}
+The innovation vector contains information about how much the estimate $\vec{x}(n|n-1)$ differs from the newly obtained measurements $y(n)$ and can be written as
+\begin{equation}
+ \vec{v}(n) = \vec{y}(n) -\matrix{H} \vec{x}(n|n-1)\\,
+\end{equation}
+where $\matrix{H}$ is called the observation matrix. In our case, the measurement vector has the form 
+\begin{equation}
+\vec{y}(n) = \begin{bmatrix}
+x_m(n) \\ y_m(n) \\ 
+\end{bmatrix}\\,
+\end{equation}
+so that $\vec{v}(n)$ only represent the innovation in the position measurements. Therefore, the observation matrix results in 
+\begin{equation}
+	\matrix{H} = \begin{bmatrix}
+	1 & 1 & 0 & 0 \\
+	\end{bmatrix}\\.
+\end{equation}
+The filter gains are computed at each time step by 
+\begin{equation}\label{eq:filtergain}
+	\matrix{W}(n+1) = \matrix{P}(n+1|n)\matrix{H}^T\matrix{S}^{-1}(n+1)
+\end{equation}
+where
+\begin{description}
+	\item[$\matrix{P}$] represents the predictor covariance matrix and,
+	\item[$\matrix{S}$] the measurement prediction covariance.
+\end{description}
+The state prediction covariance is first calculated recursively by 
+\begin{equation}
+\matrix{P}(n|n+1) = \Expc\{\vec{x}_s(n+1)\vec{x}^*_s\} = \matrix{A}\matrix{P}(n|n)\matrix{A}^T + \vec{Q}\\,
+\end{equation}
+where $\vec{Q}$ is the covariance matrix for the input $\vec{u}(n)$. After the filter gains have been calculated by \cref{eq:filtergain}, the state covariance is updated by 
+\begin{equation}
+	\matrix{P}(n+1|n+1)  = \matrix{P}(n+1|n)-\matrix{W}(n+1)\matrix{S}(n+1)\matrix{W}^T(n+1)\\.
+\end{equation}
+The innovation covariance, or measurement prediction covariance is given by
+\begin{equation}\label{eq:innov}
+\matrix{S}(n+1) = \matrix{H}\matrix{P}(n+1|n)\matrix{H}^T +\matrix{R}\\,
+\end{equation}
+where $\matrix{R}$ is the measurement covariance.

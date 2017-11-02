@@ -12,17 +12,21 @@
 \contentsline {chapter}{\numberline {3}Clustering}{7}
 \contentsline {chapter}{\numberline {4}Multi-Target Tracking}{9}
 \contentsline {section}{\numberline {4.1}State Variable Representation of an LTI System}{9}
-\contentsline {section}{\numberline {4.2}The Kalman Filter}{10}
-\contentsline {section}{\numberline {4.3}Gating Techniques}{10}
-\contentsline {section}{\numberline {4.4}The Assignment Problem}{10}
-\contentsline {subsection}{\numberline {4.4.1}NN-approach}{10}
-\contentsline {subsection}{\numberline {4.4.2}PDA-approach}{10}
-\contentsline {subsection}{\numberline {4.4.3}JPDA-approach}{10}
-\contentsline {section}{\numberline {4.5}Track Life Stages}{10}
-\contentsline {section}{\numberline {4.6}Maneuver Detection and Adaptive Filtering}{10}
-\contentsline {chapter}{\numberline {5}Micro-Doppler Signatures}{11}
-\contentsline {chapter}{\numberline {6}Classification}{13}
-\contentsline {chapter}{\numberline {7}Results}{15}
-\contentsline {chapter}{\numberline {8}Summary and Outlook}{17}
-\contentsline {chapter}{Appendix \numberline {A}Symbols and Constants}{19}
-\contentsline {chapter}{Appendix \numberline {B}Mathematical Formulas}{21}
+\contentsline {section}{\numberline {4.2}The Kalman Filter}{11}
+\contentsline {subsection}{\numberline {4.2.1}Estimation in Linear Systems}{11}
+\contentsline {subsection}{\numberline {4.2.2}Initialization of State Estimators}{12}
+\contentsline {section}{\numberline {4.3}Gating Techniques}{13}
+\contentsline {section}{\numberline {4.4}The Assignment Problem}{14}
+\contentsline {subsection}{\numberline {4.4.1}NN-approach}{14}
+\contentsline {subsection}{\numberline {4.4.2}PDA-approach}{15}
+\contentsline {subsection}{\numberline {4.4.3}JPDA-approach}{15}
+\contentsline {section}{\numberline {4.5}Track Life Stages}{15}
+\contentsline {subsection}{\numberline {4.5.1}Track Confirmation}{15}
+\contentsline {subsection}{\numberline {4.5.2}Track Deletion}{15}
+\contentsline {section}{\numberline {4.6}Maneuver Detection and Adaptive Filtering}{15}
+\contentsline {chapter}{\numberline {5}Micro-Doppler Signatures}{17}
+\contentsline {chapter}{\numberline {6}Classification}{19}
+\contentsline {chapter}{\numberline {7}Results}{21}
+\contentsline {chapter}{\numberline {8}Summary and Outlook}{23}
+\contentsline {chapter}{Appendix \numberline {A}Symbols and Constants}{25}
+\contentsline {chapter}{Appendix \numberline {B}Mathematical Formulas}{27}

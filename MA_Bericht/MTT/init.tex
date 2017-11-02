@@ -1,0 +1,27 @@
+When a detection that has not been assigned to an existing track is present, a tentative track is initiated (see \cref{mtt:management}) the Kalman filter is initialized. First, the state vector as
+\begin{equation}
+	\vec{x}(0) = \begin{bmatrix}
+	r_m\cos(\theta_m) \\ r_m\sin(\theta_m) \\0 \\0
+	\end{bmatrix}\\,
+\end{equation}
+where $r_m$ and $\theta_m$ are the measured range and azimuth respectively. Given that the measurement of the azimuth angle is not very accurate, we have chosen to initialize the velocities $v_x$ and $v_y$ of each target with $v_x = 0$ and $v_y=0$. Note that, however, the velocities can also be initialized by taking two position measurements and calculating
+\begin{align}
+	v_x &= \frac{x_m(0)-x_m(-1)}{\Delta}  & v_y &= \frac{y_m(0)-y_m(-1)}{\Delta}
+\end{align}
+where $\Delta$ is the time between measurements, $x_m(n)  = r_m(n)\cos(\theta_m(n))$ and $y_m(n)  = r_m(n)\sin(\theta_m(n))$. Furthermore, the initial covariance matrix is calculated depending on the measurement matrix 
+\begin{equation}
+	\matrix{R} = \begin{bmatrix}
+	R_{11} & R_{12}\\ R_{21} & R_{22}
+	\end{bmatrix}
+\end{equation}
+as
+\begin{equation}
+	\matrix{P}(0|0) = \begin{bmatrix}
+	R_{11} & R_{12} & R_{11}/\Delta & R_{12}/\Delta \\
+	R_{21} & R_{22} & R_{21}/\Delta & R_{22}/\Delta \\
+	R_{11}/\Delta & R_{12}/\Delta & 2R_{11}/\Delta^2 & 2R_{12}/\Delta^2 \\
+		R_{22}/\Delta & R_{22}/\Delta & 2R_{21}/\Delta^2 & 2R_{22}/\Delta^2 
+ 	\end{bmatrix}
+\end{equation}
+
+TO DO (IN RESEARCH TOO):  Choosing appropiate $\matrix{R}$ and $\matrix{Q}$ matrices

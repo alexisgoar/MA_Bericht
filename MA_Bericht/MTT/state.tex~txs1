@@ -46,6 +46,6 @@ In the case of radar tracking, however, one only obtains detection at discrete t
 The state transition matrix for our case is the so called Newtonian matrix
 \begin{equation}
 	\matrix{\Phi} = \begin{bmatrix}
-	1&0&T&0 \\ 0&1&0&T \\ 0&0&1&0 \\ 0&0&0&1
-	\end{bmatrix}\\.
+	1&0&T&0 \\ 0&1&0&T \\ 0&0&0&T \\ v_y&5
+	\end{bmatrix}\\,
 \end{equation}

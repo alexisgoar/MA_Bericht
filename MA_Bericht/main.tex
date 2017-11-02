@@ -57,6 +57,8 @@ captions=tableabove,twoside, openright]{scrreprt}
     long = Multi-Target Tracking }
 \DeclareAcronym{lti}{
 	short = LTI , long = Linear Time Invariant}
+\DeclareAcronym{nn}{
+	short = NN , long = nearest-neighbor}
 %ausprobieren
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
@@ -109,7 +111,9 @@ captions=tableabove,twoside, openright]{scrreprt}
 \renewcommand{\matrix}[1]{\mathbf{#1}}
 \newcommand* {\snr} {\mathrm{SNR}}
 \newcommand{\Iog}  {\operatorname{log}}
-
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+\newcommand*{\Expc}{\mathbf{E}}
 
 \addto\captionsenglish{%
 	\renewcommand{\figurename}{Figure}%
@@ -172,12 +176,23 @@ captions=tableabove,twoside, openright]{scrreprt}
 \section{State Variable Representation of an LTI System}\label{mtt:state}
 \input{MTT/state}
 \section{The Kalman Filter}\label{mtt:kalman}
+ \input{MTT/Kalman}
+ \subsection{Estimation in Linear Systems}
+ \input{MTT/estim}
+\subsection{Initialization of State Estimators}
+\input{MTT/init}
 \section{Gating Techniques}\label{mtt:gating}
+\input{MTT/Gating}
 \section{The Assignment Problem}\label{mtt:assign}
+\input{MTT/Assign}
 \subsection{NN-approach}\label{mtt:nn}
+\input{MTT/NN}
 \subsection{PDA-approach}\label{mtt:pda}
 \subsection{JPDA-approach}\label{mtt:jpda}
 \section{Track Life Stages}\label{mtt:management}
+\input{MTT/TrackManagement}
+\subsection{Track Confirmation}
+\subsection{Track Deletion}
 \section{Maneuver Detection and Adaptive Filtering}\label{mtt:maneuver}
 \chapter{Micro-Doppler Signatures}
 \chapter{Classification}

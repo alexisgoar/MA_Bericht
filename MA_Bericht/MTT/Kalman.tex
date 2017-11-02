@@ -1,0 +1,14 @@
+Different classes of filters (or estimators) have been used for tracking. One of the simplest class of these filters is, for instance, are the so called "Fixed-Coefficient" filters. The most implemented of these are the $\alpha\beta$ and $\alpha\beta\gamma$ trackers [cite]. These filter provide smoothed and predicted data for target position, velocity and in case of the latter, acceleration.  Nonetheless, given the better estimates it provides, the Kalman filter has been implemented primarily for radar-tracking purposes. Additionaly, the Kalman filter presents the following advantages over the Fixed-Coefficient filters.
+\begin{enumerate}
+	\item The gain coefficients are computed dynamically, i.e. the same filter can be used for targets of different nature
+	\item The filter is robust against missed detections
+	\item Provides an accurate measure of the covariance matrix, which is relevant for gating and association processes
+\end{enumerate}
+An overview of the process undertaken by the Kalman filter is presented in \cref{fig:kalman}.
+\begin{figure}[h]
+	\centering
+	\input{fundamentals_figs/blank.tex}
+	\caption{The Kalman Filter}
+	\label{fig:kalman}
+\end{figure} 
+Before presenting the equations that describe the Kalman filter, the notation is introduced. $\hat{\vec{x}}(n|m)$ represents the estimate during the $n$-th sampling interval using all data up to the $m$-th sampling interval, and $z(n)$ contains the measurements (or detections that have been assigned to the corresponding track) obtained at the $n$-th time-step. 
