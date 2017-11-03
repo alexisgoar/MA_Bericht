@@ -35,10 +35,12 @@ captions=tableabove,twoside, openright]{scrreprt}
 \usepackage[automark]{scrpage2}
 \usepackage{babelbib}
 \usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
 %-----------------NEW PACKAGES from October2017--------%
 \usepackage[]{datetime2}
 \usepackage{enumitem}
 \setlist[description]{leftmargin=2cm,labelindent=2cm}
+\usepackage{schemabloc}
 \usepackage{acro}
 \DeclareAcronym{mimo}{
 	short = MIMO,
@@ -59,6 +61,10 @@ captions=tableabove,twoside, openright]{scrreprt}
 	short = LTI , long = Linear Time Invariant}
 \DeclareAcronym{nn}{
 	short = NN , long = nearest-neighbor}
+\DeclareAcronym{dbscan}{
+	short = DBSCAN , long = density-based spatial clustering of applicatios with noise}
+\DeclareAcronym{dbd}{
+	short =DBD , long =density-based-decomposition}
 %ausprobieren
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
@@ -156,7 +162,7 @@ captions=tableabove,twoside, openright]{scrreprt}
 	\clearscrheadfoot
 	\ihead{\headmark}
 	\ohead{\pagemark}
-	
+\input{intro/Intro}
 \chapter{Radar Fundamentals}\label{ch:basics}
 \input{fundamentals/Intro}
 \section{Radar Definitions}\label{bs:definitions}
@@ -170,7 +176,14 @@ captions=tableabove,twoside, openright]{scrreprt}
 \section{Doppler Ranging}\label{bs:dopplerRanging}
 \section{Azimuth Estimation}
 \section{Detection Theory}\label{bs:detection}
-\chapter{Clustering}
+\chapter{Clustering}\label{ch:cluster}
+\input{clustering/Into}
+\section{Density-Based Clustering}\label{cs:Density}
+\input{clustering/dbd}
+\subsection{Definitions}\label{cs:Def}
+\input{clustering/definition}
+\subsection{DBSCAN}\label{cs:dbscan}
+\input{clustering/dbscan}
 \chapter{Multi-Target Tracking}
 \input{MTT/intro}
 \section{State Variable Representation of an LTI System}\label{mtt:state}

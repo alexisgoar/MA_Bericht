@@ -3,7 +3,7 @@ After a correct detection and clustering of targets, the detections have to be a
 Each track of a \ac{mtt}-algorithm contains a Kalman Filter (\cref{mtt:kalman}) which is a commonly used filter to predict future states and to calculate variables that cannot be measured directly. At each step, gating (\cref{mtt:gating}) is applied to each of the new detections to reduce the scope of detections that can be assigned to a given track at each time step $k$. After gating, the detections calculated in a given step are assigned to each of the tracks. For this, the assignment problem has to be solved (\cref{mtt:assign}). After the assignment has been done, the state of each of the tracks is updated according to pre-established rules (\cref{mtt:management}). The whole process used for the \ac{mtt} is illustrated in \cref{fig:mtt}.
 \begin{figure}[h]
 	\centering
-	\input{fundamentals_figs/blank.tex}
+	\input{MTT_figs/MTT.tex}
 	\caption{MTT-process}
 	\label{fig:mtt}
 \end{figure} 

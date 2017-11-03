@@ -27,7 +27,7 @@ where
 \end{description}
 \begin{figure}[h]
 	\centering
-	\input{MTT_figs/LTI.tex}
+	\input{fundamentals_figs/blank.tex}
 	\caption{An LTI System}
 	\label{fig:lti}
 \end{figure} 
