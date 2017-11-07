@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+% Reference Grid
+\draw[white,very thin] (0,0) grid (10,4); 
+
+%horizontalaxis
+\draw[->] (0,0) -- (10,0) node[anchor=north] {$t$}; 
+\draw[->] (0,2) -- (10,2) node[anchor=north] {$t$}; 
+
+% t = 0
+\draw[dotted] (1,0) --(1,4) node[anchor = west] {$t = 0$}; 
+\draw[dotted] (3,0) --(3,2)
+
+%tx signal
+\draw[thick,blue] (1,2)--(1,2.5)--(1.5,2.5)--(1.5,2);
+\draw[thick,blue] (6,2)--(6,2.5)--(6.5,2.5)--(6.5,2);
+
+%rx signal
+\draw[thick,blue] (3,0)--(3,0.5)--(3.5,0.5)--(3.5,0);
+\draw[thick,blue] (8,0)--(8,0.5)--(8.5,0.5)--(8.5,0);
+
+%labels
+\draw(0,0.3) node {RX}; 
+\draw(0,2.3) node {TX};
+\draw(1,2) node [anchor = south west] {$\tau$}; 
+
+\end{tikzpicture}

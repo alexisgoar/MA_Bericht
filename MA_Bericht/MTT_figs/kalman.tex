@@ -1,0 +1,59 @@
+\begin{tikzpicture}
+% Reference Grid
+   \tikzstyle{block} = [draw, shape=rectangle, minimum height=3em, minimum width=8em, node distance=0.5cm and 0.5cm, line width=1pt]
+\tikzstyle{block2} = [draw, shape=rectangle, minimum height=1.5em, minimum width=6em, node distance=0.5cm and 0.5cm, line width=1pt,font = \small]
+\tikzstyle{sum} = [draw, shape=circle, node distance=1.5cm, line width=1pt, minimum width=1.5em]
+\tikzstyle{branch}=[fill,shape=circle,minimum size=3pt,inner sep=0pt]
+\tikzstyle{empty} = [fill,shape=circle,minimum size=0.0000001pt,inner sep=0pt]
+\node [block,align = center] (A1){State at $t_k$   \\ $\vec{x}(K)$ }; 
+
+\node [block, right= of A1,align = center] (B1) {Control \\ $\vec{u}(k)$}; 
+\node [block, right= of B1,align = center] (C1) {State Estimate \\ $\vec{x}(k|k)$};
+\node [block, right= of C1, align = center] (D1) {State error covariance \\ $\matrix{P}(k|k)$};  
+
+
+% C Reiehe
+ \node[block, below= of C1,align =center] (C2){State Prediction \\$\hat{\vec{x}}(k+1|k) =$ \\ $\matrix{F}(k)\hat{\vec{x}}(k|k)$\\$+\matrix{G}(k)\vec{u}(k)$  }; 
+ \node[block, below= of C2,align =center] (C3){Measurement \\ Prediction \\ $\hat{\vec{z}}(k+1|k) =$\\ $\matrix{H}(k+1)\hat{\vec{x}}(k+1|k)$ }; 
+ \node[block, below= of C3,align =center] (C4){Innovation \\ $\vec{v}(k+1) = \vec{z}(k+1)$\\ $-\hat{\vec{z}}(k+1|k)$}; 
+  \node[block, below= of C4,align =center] (C5){Updated \\state estimate \\ $\hat{\vec{x}}(k+1|k+1)=$ \\$\hat{\vec{x}}(k+1|k)$ \\
+  $\matrix{W}(k+1)\vec{v}(k+1)$ };   
+  
+  % D Reihe
+ \node[block, below= of D1,align =center] (D2){State Prediction \\ Covariance \\ $\matrix{P}(k+1|k)=$ \\ $\matrix{F}(k)\matrix{P}(k|k)\matrix{F}^T(k) + \matrix{Q}(k)$ }; 
+\node[block, below= of D2,align =center] (D3){Innovation \\ Covariance \\ $\matrix{S}(k+1) = $\\ $\matrix{H}(k+1) \matrix{P}(k+1|k)\matrix{H}^T(k+1)$ \\ $+\matrix{R}(k+1)$}; 
+\node[block, below= of D3,align =center] (D4){Filter gain \\ $\matrix{W}(k+1) = $\\ $\matrix{P}(k+1|k)\matrix{H}^T(k+1)\matrix{S}^{-1}(k+1)$}; 
+\node[block, below= of D4,align =center] (D5){Updated state \\ covariance \\ $\matrix{P}(k+1|k+1) = $ \\ $\matrix{P}(k+1|k)$ \\ $-\matrix{W}(k+1)\matrix{S}(k+1)\matrix{W}^T(k+1)$  }; 
+
+% A Reihe 
+\node [block, below= of A1, align = center] (A2){ Transition to $t_{k+1}$\\$\vec{x}(k+1) =$\\$ \matrix{F}(k)\vec{x}(k)$\\$+\matrix{G}(k)\vec{u}(k)+\vec{v}(k)$  }; 
+\path let \p1=(A2), \p2=(C4) in node[block, align = center] (A3) at (\x1,\y2)   {Measurement \\ $\vec{z}(k+1) = \matrix{H}\vec{x}(k+1)$\\$+\vec{w}(k+1)$};
+   
+   \begin{scope}[line width = 1pt]
+   
+   \draw[->] (A1)--(A2); 
+   \draw[->] (A2)--(A3); 
+   
+   \draw[->] (C1)--(C2); 
+   \draw[->] (C2)--(C3); 
+   \draw[->] (C3)--(C4); 
+   \draw[->] (C4)--(C5); 
+   
+   \draw[->] (D1)--(D2); 
+   \draw[->] (D2)--(D3); 
+   \draw[->] (D3)--(D4); 
+   \draw[->] (D4)--(D5);
+   
+   \draw (B1)--($(A2)!.5!(C2)$); 
+   \draw[->] ($(A2)!.5!(C2)$)|-(A2); 
+   \draw[->] ($(A2)!.5!(C2)$)|-(C2); 
+   \draw[->] (A3) -- (C4); 
+   \draw[-] (D4) -| ($(D4)!.45!(C5)$); 
+   \draw[->]  ($(D4)!.45!(C5)$) |-  ($(C5)-(-1.55,0.3)$); 
+   \draw[-] (C2) -| ($(C2)!.45!(D3)$); 
+   \draw[->]  ($(C2)!.45!(D3)$) |-  ($(C5)+(1.55,0.3)$); 
+   
+   
+   \end{scope}
+
+\end{tikzpicture}

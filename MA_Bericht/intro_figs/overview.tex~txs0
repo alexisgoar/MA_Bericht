@@ -1,0 +1,38 @@
+\begin{tikzpicture}[auto,>=latex']
+%\draw[gray,very thin] (0,0) grid (15,4); s
+   \tikzstyle{block} = [draw, shape=rectangle, minimum height=3em, minimum width=8em, node distance=0.5cm and 0.5cm, line width=1pt]
+      \tikzstyle{block2} = [draw, shape=rectangle, minimum height=1.5em, minimum width=6em, node distance=0.5cm and 0.5cm, line width=1pt,font = \small]
+\tikzstyle{sum} = [draw, shape=circle, node distance=1.5cm, line width=1pt, minimum width=1.5em]
+\tikzstyle{branch}=[fill,shape=circle,minimum size=4pt,inner sep=0pt]
+\tikzstyle{empty} = [fill,shape=circle,minimum size=1pt,inner sep=0pt]
+
+%Creating Blocks and Connection Nodes
+\node[block] (input){Raw Data}; 
+\node[block,below= of input] (dt) {Detection}; 
+\node[block,right= of dt] (ct) {Clustering}; 
+\node[block,right= of ct,text width=2.5 cm,block,align = center](mtt){Multi-Target-Tracking};
+\node[block,right= of mtt,text width=2.5 cm,block,align = center](fe) {Feature Extaction}; 
+\node[block,above= of fe] (cl){Classification}; 
+
+\node[empty,below of = dt](nd1){}; 
+\node[block2,below= of nd1](rg) {Range};  
+\node[block2,below= of rg,text width=5em,align = center](rr)
+ {Doppler Range}; 
+\node[block2,below= of rr](az) {Azimuth}; 
+
+
+\node[branch,left= of rg] (br1){}; 
+
+\begin{scope}[line width = 1pt]
+\draw[->](input)--(dt); 
+\draw[->](dt)--(ct);
+\draw[->](ct)--(mtt); 
+\draw[->](mtt)--(fe); 
+\draw[->](fe)--(cl); 
+\draw[-] (dt)--(nd1); 
+\draw[-] (nd1)--(br1); 
+
+
+\end{scope}
+
+\end{tikzpicture}

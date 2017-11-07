@@ -4,7 +4,7 @@
 \contentsline {chapter}{\numberline {2}Radar Fundamentals}{3}
 \contentsline {section}{\numberline {2.1}Radar Definitions}{3}
 \contentsline {section}{\numberline {2.2}MIMO Array}{4}
-\contentsline {section}{\numberline {2.3}Signal Model}{4}
+\contentsline {section}{\numberline {2.3}Signal Model}{5}
 \contentsline {section}{\numberline {2.4}Ranging}{6}
 \contentsline {section}{\numberline {2.5}Doppler Ranging}{6}
 \contentsline {section}{\numberline {2.6}Azimuth Estimation}{6}
@@ -16,17 +16,17 @@
 \contentsline {chapter}{\numberline {4}Multi-Target Tracking}{9}
 \contentsline {section}{\numberline {4.1}State Variable Representation of an LTI System}{9}
 \contentsline {section}{\numberline {4.2}The Kalman Filter}{11}
-\contentsline {subsection}{\numberline {4.2.1}Estimation in Linear Systems}{11}
-\contentsline {subsection}{\numberline {4.2.2}Initialization of State Estimators}{12}
+\contentsline {subsection}{\numberline {4.2.1}Estimation in Linear Systems}{12}
+\contentsline {subsection}{\numberline {4.2.2}Initialization of State Estimators}{13}
 \contentsline {section}{\numberline {4.3}Gating Techniques}{13}
 \contentsline {section}{\numberline {4.4}The Assignment Problem}{14}
-\contentsline {subsection}{\numberline {4.4.1}NN-approach}{14}
-\contentsline {subsection}{\numberline {4.4.2}PDA-approach}{15}
-\contentsline {subsection}{\numberline {4.4.3}JPDA-approach}{15}
-\contentsline {section}{\numberline {4.5}Track Life Stages}{15}
-\contentsline {subsection}{\numberline {4.5.1}Track Confirmation}{15}
-\contentsline {subsection}{\numberline {4.5.2}Track Deletion}{15}
-\contentsline {section}{\numberline {4.6}Maneuver Detection and Adaptive Filtering}{15}
+\contentsline {subsection}{\numberline {4.4.1}NN-approach}{15}
+\contentsline {subsection}{\numberline {4.4.2}PDA-approach}{16}
+\contentsline {subsection}{\numberline {4.4.3}JPDA-approach}{16}
+\contentsline {section}{\numberline {4.5}Track Life Stages}{16}
+\contentsline {subsection}{\numberline {4.5.1}Track Confirmation}{16}
+\contentsline {subsection}{\numberline {4.5.2}Track Deletion}{16}
+\contentsline {section}{\numberline {4.6}Maneuver Detection and Adaptive Filtering}{16}
 \contentsline {chapter}{\numberline {5}Micro-Doppler Signatures}{17}
 \contentsline {chapter}{\numberline {6}Classification}{19}
 \contentsline {chapter}{\numberline {7}Results}{21}
