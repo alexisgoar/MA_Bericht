@@ -36,6 +36,9 @@ captions=tableabove,twoside, openright]{scrreprt}
 \usepackage{babelbib}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,positioning,decorations.pathreplacing,calc}
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+	%default radius will be 1pt. 
+	cross/.default={0.1 cm}}
 %-----------------NEW PACKAGES from October2017--------%
 \usepackage[]{datetime2}
 \usepackage{enumitem}
@@ -69,8 +72,8 @@ captions=tableabove,twoside, openright]{scrreprt}
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
 %ausprobieren ende
-
-
+\usepackage{slashbox}
+\newcolumntype{K}[1]{>{\centering\arraybackslash}p{#1}}
 
 
 \pagestyle{scrplain}
@@ -174,7 +177,7 @@ captions=tableabove,twoside, openright]{scrreprt}
 
 \section{Ranging}\label{bs:ranging}
 \section{Doppler Ranging}\label{bs:dopplerRanging}
-\section{Azimuth Estimation}
+\section{Azimuth Estimation}\label{bs:azimuth}
 \section{Detection Theory}\label{bs:detection}
 \chapter{Clustering}\label{ch:cluster}
 \input{clustering/Into}

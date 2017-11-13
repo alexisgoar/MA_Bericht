@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  6 NOV 2017 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  13 NOV 2017 15:46
 entering extended mode
 **./main.tex
 (main.tex
@@ -2503,14 +2503,24 @@ Package: translations 2017/08/31 v1.7a internationalization of LaTeX2e packages
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 Package cleveref Info: `listings' support loaded on input line 2950.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\slashbox\slashbox.sty"
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box113
+\@slashboxb=\box114
+\@slashboxc=\box115
+\@slashboxwd=\count337
+\@slashboxht=\count338
+\@slashsepl=\dimen312
+\@slashsepr=\dimen313
+)
 Package scrkbase Info: You've told me to redefine the font selection of the
 (scrkbase)             element `pagehead' that is an alias of element
-(scrkbase)             `pageheadfoot' on input line 89.
+(scrkbase)             `pageheadfoot' on input line 92.
 
 
 Package scrkbase Warning: `pagehead' is only an alias of `pageheadfoot'.
-(scrkbase)                Font of page foot may also be changed on input line 8
-9.
+(scrkbase)                Font of page foot may also be changed on input line 9
+2.
 
 
 Class scrreprt Warning: Usage of package `titlesec' together
@@ -2521,19 +2531,19 @@ Class scrreprt Warning: Usage of package `titlesec' together
 (scrreprt)              the extended optional argument of the section
 (scrreprt)              commands.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `titlesec' on input line 132.
+(scrreprt)              package `titlesec' on input line 135.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box113
+\ttl@box=\box116
 \beforetitleunit=\skip91
 \aftertitleunit=\skip92
-\ttl@plus=\dimen312
-\ttl@minus=\dimen313
+\ttl@plus=\dimen314
+\ttl@minus=\dimen315
 \ttl@toksa=\toks45
-\titlewidth=\dimen314
-\titlewidthlast=\dimen315
-\titlewidthfirst=\dimen316
+\titlewidth=\dimen316
+\titlewidthlast=\dimen317
+\titlewidthfirst=\dimen318
 
 
 Package titlesec Warning: Non standard sectioning command detected
@@ -2558,7 +2568,7 @@ Package titlesec Warning: Non standard sectioning command detected
 )
 
 Class scrreprt Warning: Activating an ugly workaround for a missing
-(scrreprt)              feature of package `titlesec` on input line 132.
+(scrreprt)              feature of package `titlesec` on input line 135.
 
 
 LaTeX Warning: Unused global option(s):
@@ -2567,50 +2577,50 @@ LaTeX Warning: Unused global option(s):
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 140.
-LaTeX Font Info:    Try loading font information for OML+jkp on input line 140.
+LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 143.
+LaTeX Font Info:    Try loading font information for OML+jkp on input line 143.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\kpfonts\omljkp.fd"
 File: omljkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 140.
-LaTeX Font Info:    Try loading font information for OMS+jkp on input line 140.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 143.
+LaTeX Font Info:    Try loading font information for OMS+jkp on input line 143.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\kpfonts\omsjkp.fd"
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 140.
-LaTeX Font Info:    Try loading font information for OMX+jkp on input line 140.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 143.
+LaTeX Font Info:    Try loading font information for OMX+jkp on input line 143.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\kpfonts\omxjkp.fd"
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 140.
-LaTeX Font Info:    Try loading font information for U+jkpexa on input line 140
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 143.
+LaTeX Font Info:    Try loading font information for U+jkpexa on input line 143
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\kpfonts\ujkpexa.fd"
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 140.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 143.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 143.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Try loading font information for T1+jkp on input line 140.
+LaTeX Font Info:    ... okay on input line 143.
+LaTeX Font Info:    Try loading font information for T1+jkp on input line 143.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\kpfonts\t1jkp.fd"
 File: t1jkp.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkp.
@@ -2618,19 +2628,19 @@ File: t1jkp.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkp.
 ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count337
-\scratchdimen=\dimen317
-\scratchbox=\box114
-\nofMPsegments=\count338
-\nofMParguments=\count339
+\scratchcounter=\count339
+\scratchdimen=\dimen319
+\scratchbox=\box117
+\nofMPsegments=\count340
+\nofMParguments=\count341
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count340
-\MPscratchDim=\dimen318
-\MPnumerator=\count341
-\makeMPintoPDFobject=\count342
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen320
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
 \everyMPtoPDFconversion=\toks47
 )
-LaTeX Info: Redefining \microtypecontext on input line 140.
+LaTeX Info: Redefining \microtypecontext on input line 143.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2649,7 +2659,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count343
+\c@lstlisting=\count345
 
 babelbib: Use citation-dependent languages in bibliography
 babelbib: Set bibliography fall-back language to english
@@ -2659,7 +2669,7 @@ File: english.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 babelbib extension \bibsenglish added to \extrasenglish
 babelbib extension \btxifchangecaseon added to \extrasenglish
 )
-\AtBeginShipoutBox=\box115
+\AtBeginShipoutBox=\box118
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\translations\dicts\translations-basic-d
 ictionary-english.trsl"
@@ -2667,7 +2677,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 140.
+or `english'. on input line 143.
 
 babelbib extension \btxifchangecaseoff added to \extrasenglish
 (cover/cover.tex
@@ -2756,7 +2766,7 @@ d-to.pdf>]) [1
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 15
-5.
+8.
  (main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -2788,68 +2798,75 @@ Class scrreprt Warning: \float@addtolists detected!
 chapter 2.
 (fundamentals/Intro.tex) (fundamentals/def.tex
 (fundamentals_figs/unambiguous_range.tex) [3] (fundamentals_figs/doppler.tex))
-(fundamentals/mimo.tex (fundamentals_figs/mimo.tex) [4])
-(fundamentals/signal.tex (fundamentals_figs/blank.tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]) [6]
+(fundamentals/mimo.tex [4] (fundamentals_figs/mimo.tex))
+(fundamentals/signal.tex [5] (fundamentals_figs/cube.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [6] [7] [8
+
+
+]
 chapter 3.
 (clustering/Into.tex) (clustering/dbd.tex) (clustering/definition.tex
-(fundamentals_figs/blank.tex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(fundamentals_figs/blank.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7
-
-
-]) (clustering/dbscan.tex
+(clustering_figs/density1.tex) (clustering_figs/density2.tex) [9])
+(clustering/dbscan.tex
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-)) [8]
+)) [10]
 chapter 4.
 (MTT/intro.tex (MTT_figs/MTT.tex
 Overfull \hbox (6.26495pt too wide) in paragraph at lines 9--9
  []\T1/jkp/m/n/10.95 Management 
  []
 
-)) (MTT/state.tex [9
+)) (MTT/state.tex [11
 
 
-] (MTT_figs/LTI.tex)) (MTT/Kalman.tex [10]
-(MTT_figs/kalman.tex)) (MTT/estim.tex [11]) (MTT/init.tex [12]) (MTT/Gating.tex
-(fundamentals_figs/blank.tex) [13]) (MTT/Assign.tex
-(fundamentals_figs/blank.tex)) [14] (MTT/NN.tex (fundamentals_figs/blank.tex)
+] (MTT_figs/LTI.tex)) (MTT/Kalman.tex [12]
+(MTT_figs/kalman.tex)) (MTT/estim.tex [13]) (MTT/init.tex [14]) (MTT/Gating.tex
+(MTT_figs/gating.tex) [15]) (MTT/Assign.tex (MTT_figs/asignment.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (MTT/NN.tex (MTT_figs/assign2.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \hbox (1.0772pt too wide) in paragraph at lines 14--15
 []\T1/jkp/m/n/10.95 Observations that are con-sid-ered for singly-validated tra
 cks will not be con-sid-ered for mutiply-
  []
 
-) (MTT/TrackManagement.tex [15]) [16]
+[16]) (MTT/TrackManagement.tex (fundamentals_figs/blank.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [17] [18]
 chapter 5.
-[17
+[19
 
 
-] [18
+] [20
 
 
 ]
 chapter 6.
-[19] [20
-
-
-]
-chapter 7.
 [21] [22
 
 
 ]
-chapter 8.
+chapter 7.
 [23] [24
+
+
+]
+chapter 8.
+[25] [26
 
 
 ]
@@ -2874,23 +2891,23 @@ Overfull \hbox (24.05273pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
 
-) [25] [26
+) [27] [28
 
 
 ]
 chapter B.
-[27] (main.bbl [28
+[29] (main.bbl [30
 
 
-]) [29] (main.aux) ) 
+]) [31] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 43759 strings out of 493323
- 885493 string characters out of 3139056
- 1045367 words of memory out of 3000000
- 46519 multiletter control sequences out of 15000+200000
+ 43868 strings out of 493323
+ 887675 string characters out of 3139056
+ 1054013 words of memory out of 3000000
+ 46615 multiletter control sequences out of 15000+200000
  661140 words of font info for 191 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,77p,10365b,1670s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,16n,77p,10365b,1670s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/kpfonts/kpfont
 s-expert.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpbmi.pfb><C:/Program Files/MiK
@@ -2901,10 +2918,11 @@ pmit8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmsc8a.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (38 pages, 163570 bytes).
+type1/public/amsfonts/latxfont/line10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (40 pages, 179061 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
+ 184 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  14866 words of extra memory for PDF output out of 17280 (max. 10000000)
 

@@ -9,7 +9,7 @@
 
 \node [block, right= of A1,align = center] (B1) {Control \\ $\vec{u}(k)$}; 
 \node [block, right= of B1,align = center] (C1) {State Estimate \\ $\vec{x}(k|k)$};
-\node [block, right= of C1, align = center] (D1) {State error covariance \\ $\matrix{P}(k|k)$};  
+\node at (12,0) [block, align = center] (D1) {State error covariance \\ $\matrix{P}(k|k)$};  
 
 
 % C Reiehe
@@ -48,10 +48,10 @@
    \draw[->] ($(A2)!.5!(C2)$)|-(A2); 
    \draw[->] ($(A2)!.5!(C2)$)|-(C2); 
    \draw[->] (A3) -- (C4); 
-   \draw[-] (D4) -| ($(D4)!.45!(C5)$); 
-   \draw[->]  ($(D4)!.45!(C5)$) |-  ($(C5)-(-1.55,0.3)$); 
-   \draw[-] (C2) -| ($(C2)!.45!(D3)$); 
-   \draw[->]  ($(C2)!.45!(D3)$) |-  ($(C5)+(1.55,0.3)$); 
+   \draw[-] (D4) -| ($(D4)!.55!(C5)$); 
+   \draw[->]  ($(D4)!.55!(C5)$) |-  ($(C5)-(-1.5,0.3)$); 
+   \draw[-] (C2) -| ($(C2)!.4!(D3)$); 
+   \draw[->]  ($(C2)!.4!(D3)$) |-  ($(C5)+(1.5,0.3)$); 
    
    
    \end{scope}

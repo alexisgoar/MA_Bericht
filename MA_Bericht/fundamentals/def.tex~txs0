@@ -16,31 +16,25 @@ As depicted in \cref{fig:unambig_r}, for echoes coming from targets further than
 \begin{figure}[h]
 	\centering
 	\input{fundamentals_figs/unambiguous_range.tex}
-	\caption{Illustrating the unambiguous range.}
+	\caption{Illustrating the unambiguous range}
 	\label{fig:unambig_r}
 \end{figure} 
 
 On the other hand, the pulse width determines the ability of a radar to distinguish between two objects that are very close to each other. In other words, targets that are too close to each other will be "seen" as a single object by the radar. The minimal distance required for two targets to be distinguishable is called range resolution  $\Delta R$ and is given by 
 \begin{equation}
-\Delta R = \frac{c\tau}{2} = \frac{c}{2B}\\,
+\Delta R = \frac{c_0\tau}{2} = \frac{c_0}{2B}\\,
 \end{equation}
 where $B$ is the bandwidth of the radar. Usually, one divides the measurement space covered by the radar into $M$ range bins. Where each bin corresponds to a cell of the size $\Delta R$. The number of range bins is given by 
 \begin{equation}
 	M = \frac{R_{max}-R_{min}}{\Delta R}\\.
 \end{equation}
 
-Radar echoes coming from moving targets have the characteristic of a shift in the center frequency due to the motion of the object itself. This phenomenon is known as the Doppler effect, and the shift caused by the object is
-\begin{equation}\label{eq:dopp}
-	f_d = \frac{2 v \cos\theta}{c} f_0 = \frac{2v\cos\theta}{\lambda}\\, 
-\end{equation}
-where $\theta$ is the angle between boresight angle of the radar and the target's velocity, $v\cos\theta$ is the radial velocity of the target, $f_0$ the wavelength of the waveform and $\lambda$ the wavelength
+Radar echoes coming from moving targets have the characteristic of a shift in the center frequency due to the motion of the object itself.  
 \begin{equation}
-	\lambda = \frac{v}{f_0}. 
+	f_d = \frac{2 v \cos\theta}{c_0} f_0 = \frac{2v\cos\theta}{\lambda}
 \end{equation}
-As depicted in \cref{fig:dopp}, targets approaching to the radar can be detected by observing a positive Doppler shift $f_d$, while objects getting away from the radar cause a negative shift. 
 \begin{figure}[h]
 	\centering
 	\input{fundamentals_figs/doppler.tex}
-	\caption{Illustrating the Doppler frequency.}
-	\label{fig:dopp}
+	\caption{Illustrating the doppler frequency}
 \end{figure} 

@@ -3,33 +3,33 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Radar Fundamentals}{3}
 \contentsline {section}{\numberline {2.1}Radar Definitions}{3}
-\contentsline {section}{\numberline {2.2}MIMO Array}{4}
-\contentsline {section}{\numberline {2.3}Signal Model}{5}
-\contentsline {section}{\numberline {2.4}Ranging}{6}
-\contentsline {section}{\numberline {2.5}Doppler Ranging}{6}
-\contentsline {section}{\numberline {2.6}Azimuth Estimation}{6}
-\contentsline {section}{\numberline {2.7}Detection Theory}{6}
-\contentsline {chapter}{\numberline {3}Clustering}{7}
-\contentsline {section}{\numberline {3.1}Density-Based Clustering}{7}
-\contentsline {subsection}{\numberline {3.1.1}Definitions}{7}
-\contentsline {subsection}{\numberline {3.1.2}DBSCAN}{8}
-\contentsline {chapter}{\numberline {4}Multi-Target Tracking}{9}
-\contentsline {section}{\numberline {4.1}State Variable Representation of an LTI System}{9}
-\contentsline {section}{\numberline {4.2}The Kalman Filter}{11}
-\contentsline {subsection}{\numberline {4.2.1}Estimation in Linear Systems}{12}
-\contentsline {subsection}{\numberline {4.2.2}Initialization of State Estimators}{13}
-\contentsline {section}{\numberline {4.3}Gating Techniques}{13}
-\contentsline {section}{\numberline {4.4}The Assignment Problem}{14}
-\contentsline {subsection}{\numberline {4.4.1}NN-approach}{15}
-\contentsline {subsection}{\numberline {4.4.2}PDA-approach}{16}
-\contentsline {subsection}{\numberline {4.4.3}JPDA-approach}{16}
-\contentsline {section}{\numberline {4.5}Track Life Stages}{16}
-\contentsline {subsection}{\numberline {4.5.1}Track Confirmation}{16}
-\contentsline {subsection}{\numberline {4.5.2}Track Deletion}{16}
-\contentsline {section}{\numberline {4.6}Maneuver Detection and Adaptive Filtering}{16}
-\contentsline {chapter}{\numberline {5}Micro-Doppler Signatures}{17}
-\contentsline {chapter}{\numberline {6}Classification}{19}
-\contentsline {chapter}{\numberline {7}Results}{21}
-\contentsline {chapter}{\numberline {8}Summary and Outlook}{23}
-\contentsline {chapter}{Appendix \numberline {A}Symbols and Constants}{25}
-\contentsline {chapter}{Appendix \numberline {B}Mathematical Formulas}{27}
+\contentsline {section}{\numberline {2.2}MIMO Array}{5}
+\contentsline {section}{\numberline {2.3}Signal Model}{6}
+\contentsline {section}{\numberline {2.4}Ranging}{7}
+\contentsline {section}{\numberline {2.5}Doppler Ranging}{7}
+\contentsline {section}{\numberline {2.6}Azimuth Estimation}{7}
+\contentsline {section}{\numberline {2.7}Detection Theory}{7}
+\contentsline {chapter}{\numberline {3}Clustering}{9}
+\contentsline {section}{\numberline {3.1}Density-Based Clustering}{9}
+\contentsline {subsection}{\numberline {3.1.1}Definitions}{9}
+\contentsline {subsection}{\numberline {3.1.2}DBSCAN}{10}
+\contentsline {chapter}{\numberline {4}Multi-Target Tracking}{11}
+\contentsline {section}{\numberline {4.1}State Variable Representation of an LTI System}{11}
+\contentsline {section}{\numberline {4.2}The Kalman Filter}{13}
+\contentsline {subsection}{\numberline {4.2.1}Estimation in Linear Systems}{14}
+\contentsline {subsection}{\numberline {4.2.2}Initialization of State Estimators}{15}
+\contentsline {section}{\numberline {4.3}Gating Techniques}{15}
+\contentsline {section}{\numberline {4.4}The Assignment Problem}{16}
+\contentsline {subsection}{\numberline {4.4.1}NN-approach}{16}
+\contentsline {subsection}{\numberline {4.4.2}PDA-approach}{17}
+\contentsline {subsection}{\numberline {4.4.3}JPDA-approach}{17}
+\contentsline {section}{\numberline {4.5}Track Life Stages}{17}
+\contentsline {subsection}{\numberline {4.5.1}Track Confirmation}{18}
+\contentsline {subsection}{\numberline {4.5.2}Track Deletion}{18}
+\contentsline {section}{\numberline {4.6}Maneuver Detection and Adaptive Filtering}{18}
+\contentsline {chapter}{\numberline {5}Micro-Doppler Signatures}{19}
+\contentsline {chapter}{\numberline {6}Classification}{21}
+\contentsline {chapter}{\numberline {7}Results}{23}
+\contentsline {chapter}{\numberline {8}Summary and Outlook}{25}
+\contentsline {chapter}{Appendix \numberline {A}Symbols and Constants}{27}
+\contentsline {chapter}{Appendix \numberline {B}Mathematical Formulas}{29}

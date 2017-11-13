@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+
+\draw[black, fill = black] (4.5,1.5) circle(0.1cm); 
+\draw[black, fill = black] (2,2.5) circle(0.1cm); 
+\draw[black, fill = black] (2.5,0) circle(0.1cm); 
+\draw[black,] (4.5,1.5) circle(2cm); 
+\draw[black,] (2,2.5) circle(2cm); 
+\draw[black,] (2.5,0) circle(2cm);
+\draw(4.75,1.75) node{$P_1$}; 
+\draw(2.25,2.75) node{$P_2$}; 
+\draw(2.75,0.25) node{$P_3$}; 
+
+\draw[black] (3,1.5) circle(0.1cm); 
+\draw[black] (2,1.15) circle(0.1cm); 
+\draw[black] (5,3) circle (0.1cm); 
+
+
+
+
+
+\draw(5.25,2.25) node{$P$}; 
+
+\draw(5.25,3.25) node {$M_1$};  
+
+\draw(2.25,2.75) node {$M_2$};  
+
+\draw(6.25,1.25) node {$M_3$}; 
+
+
+%\draw[black, fill = black](8,3) circle(0.1cm); 
+%\draw[anchor = west](8.25,3) node{Predicted State}; 
+%\draw[black, ](8,2.5) circle(0.1cm); 
+%\draw[anchor = west](8.25,2.5) node{Measurement};
+%\draw[black](8,2) circle(0.1cm); 
+%\draw(8,2) node [cross,red] {}; 
+%\draw[anchor = west](8.25,2) node{Discarded Measurement}; 
+
+
+\end{tikzpicture}

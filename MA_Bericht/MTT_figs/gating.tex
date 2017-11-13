@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+% Reference Grid
+
+\draw[black, fill = black] (5,2) circle(0.1cm); 
+\draw(5.25,2.25) node{$P$}; 
+\draw[black,] (5,2) circle(2cm); 
+\draw[black] (5,3)circle(0.1cm); 
+\draw(5.25,3.25) node {$M_1$};  
+\draw[black] (2,2.5)circle(0.1cm); 
+\draw(2.25,2.75) node {$M_2$};  
+\draw[black] (6,1)circle(0.1cm); 
+\draw(6.25,1.25) node {$M_3$}; 
+\draw (2,2.5) node[cross,red] {};
+
+\draw[black, fill = black](8,3) circle(0.1cm); 
+\draw[anchor = west](8.25,3) node{Predicted State}; 
+\draw[black, ](8,2.5) circle(0.1cm); 
+\draw[anchor = west](8.25,2.5) node{Measurement};
+\draw[black](8,2) circle(0.1cm); 
+\draw(8,2) node [cross,red] {}; 
+\draw[anchor = west](8.25,2) node{Discarded Measurement}; 
+
+
+\end{tikzpicture}
