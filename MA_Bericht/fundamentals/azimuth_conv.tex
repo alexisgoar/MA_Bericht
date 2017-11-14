@@ -1,0 +1,22 @@
+Problem of maximizing the output power, formulation 
+
+\begin{equation}
+	\max_{\vec{w}} \Expc\left\{\vec{w}^H\vec{x}(t)\vec{x}^H(t)\vec{w}\right\}  = \max_{\vec{w}}\left\{\Expc|s(t)|^2|\vec{w}^H\vec{a}(\theta)|^2+\sigma^2|\vec{w}|^2\right\}\\,
+\end{equation}
+
+the solution is
+
+\begin{equation}
+ \vec{w}_{BF} = \frac{\vec{a}(\theta)}{\sqrt{\vec{a}^H(\theta)\vec{a}(\theta)}}
+\end{equation}
+
+so that the spatial spectrum can be expressed as
+\begin{equation}
+	P_{BF}(\theta) \frac{\vec{a}^H(\theta)\matrix{R}\vec{a}(\theta)}{\vec{a}^H(\theta)\vec{a}(\theta)}
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\input{fundamentals_figs/blank.tex}
+	\caption{We do need some kind of real result.}
+\end{figure} 

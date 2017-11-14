@@ -1,0 +1,65 @@
+Further definitions, for an antenna array the measured vector at time step $t$ can be obtained by
+\begin{equation}
+	\vec{x}(t) = \vec{a}(\theta){s}(t)\\,
+\end{equation}
+
+where ${s}(t)$ is the received waveform, $\vec{x}(t)$ the value observed at the virtual elements and $\vec{a}(\theta)$ are called the steering vectors. The vector $\vec{x}(t)$ thus, can be expressed by 
+\begin{equation}
+	\vec{x}(t) = \begin{bmatrix}
+	x_1(t) & x_2(t) &... & x_L(t)
+	\end{bmatrix}^T
+\end{equation}
+where $L$ is the number of virtual elements. The steering vector depends on the arrangement of the radar array, for ULA it can be written as
+\begin{equation}
+	\vec{a}_{ULA}(\theta) = \begin{bmatrix}
+	1 & e^{-\mj kd cos \theta} & ... & e^{-\mj(L-1) kd cos \theta} 
+	\end{bmatrix} 
+\end{equation}
+where $d$ is the separation between virtual elements. Assuming that $M$ point scatterers are present in the measurement space, the received signal results in
+\begin{equation}
+	\vec{x}(t) = \sum_{m=1}^{M}\vec{a}(\theta_m)s_m(t)\\,
+\end{equation}
+which can be expressed by the matrix notation 
+\begin{equation}
+	\vec{x}(t) = \matrix{A}(\theta) \vec{s}(t) + \vec{n}(t)\\,
+\end{equation}
+where 
+\begin{equation}
+	\matrix{A}(\theta) = \begin{bmatrix}
+	\vec{a}(\theta_1) & ... & \vec{a}(\theta_M)
+	\end{bmatrix}
+\end{equation}
+and
+\begin{equation}
+\vec{s}(t) = \begin{bmatrix}
+s_1(t) & ... & s_M(t)
+\end{bmatrix}^T
+\end{equation}
+and $\vec{n}(t)$ is additive white Gaussian noise.  We further define the spatial covariance matrix as
+\begin{equation}
+\matrix{R} = \Expc\left\{\vec{x}(t)\vec{x}^H(t) \right\} = \matrix{A}\Expc\left\{\vec{s}(t)\vec{s}^H(t)\right\}+ \Expc \left\{\vec{n}(t)\vec{n}^H (t)\right\}
+\end{equation}
+where we further define 
+\begin{equation}
+\Expc\left\{\vec{s}(t)\vec{s}^H(t)\right\} = \matrix{P}\\.
+\end{equation}
+and
+\begin{equation}
+\Expc\left\{\vec{n}(t)\vec{n}^H(t)\right\} = \sigma ^2 \vec{I}\\.
+\end{equation}
+The $\matrix{R}$ can then be decomposed in to
+\begin{equation}
+\matrix{R} = \matrix{A}\matrix{P}\matrix{A}^H+\sigma^2\matrix{I} = \matrix{U}\matrix{\Lambda}\matrix{U}\\.
+\end{equation}
+where $\matrix{U}$ is unitary and $\matrix{\Lambda} = \diag\left\{\lambda_1,\lambda_2,...,\lambda_L\right\}$ contains the eigenvalues ordered such as $\lambda_1 \geq \lambda_2 \geq ... \geq \lambda_L$
+A further partition is made
+\begin{equation}
+	\matrix{R}  = \matrix{U}_s\matrix{\Lambda}_s\matrix{U}_s^H + \matrix{U}_n\matrix{\Lambda}_n\matrix{U}_n^H
+\end{equation}
+and the projectors are defined
+\begin{equation}
+\matrix{\Pi} =  \matrix{U}_s\matrix{U}_s^H = \matrix{A}(\matrix{A}^H\matrix{A})^{-1}\matrix{A}^H
+\end{equation}
+\begin{equation}
+\matrix{\Pi}^\bot =  \matrix{U}_n\matrix{U}_n^H = \matrix{I}- \matrix{A}(\matrix{A}^H\matrix{A})^{-1}\matrix{A}^H
+\end{equation}

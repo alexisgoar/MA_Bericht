@@ -5,10 +5,23 @@ Bassem~R. Mahafza.
 \newblock {\em Radar {Systems} {Analysis} and {Design} {Using} {MATLAB}}.
 \newblock CRC Press, January 2002.
 
+\bibitem{fishler_mimo_2004}
+E.~Fishler, A.~Haimovich, R.~Blum, D.~Chizhik, L.~Cimini, and R.~Valenzuela.
+\newblock {MIMO} radar: an idea whose time has come.
+\newblock In {\em Proceedings of the 2004 {IEEE} {Radar} {Conference} ({IEEE}
+  {Cat}. {No}.04CH37509)}, pages 71--78, April 2004.
+
 \bibitem{huang_fmcw_2011}
 Yanchuan Huang, Paul~Victor Brennan, Dave Patrick, I.~Weller, Peters Roberts,
   and K.~Hughes.
 \newblock {FMCW} {Based} {MIMO} {Imaging} {Radar} for {Maritime} {Navigation}.
 \newblock {\em Progress In Electromagnetics Research}, 115:327--342, 2011.
+
+\bibitem{zhang_blind_2009}
+Xiaofei Zhang, Xin Gao, Gaopeng Feng, and Dazhuan Xu.
+\newblock Blind {Joint} {DOA} and {Dod} {Estimation} and {Identifiability}
+  {Results} for {MIMO} {Radar} with {Different} {Transmit} / {Receive} {Array}
+  {Manifolds}.
+\newblock {\em Progress In Electromagnetics Research B}, 18:101--119, 2009.
 
 \end{thebibliography}

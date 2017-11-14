@@ -1,13 +1,42 @@
-A \ac{mimo} setup for this research has been chosen. The concepts behind the \ac{mimo} radar will be presented briefly in this section. 
+For the estimation of the azimuth and elevation of a target's position, the phase array radar has been a popular choice during the past decades. This technique employs a series of antennas to transmit and receive the electromagnetic waveform before mentioned. Here, the phase of each element in the group of transmitted is adjusted for the radar to be able to suppress the response from specific directions and thus, "scan" a specific direction. The angular resolution of this method, however, strongly depends on the number of elements in the antenna array. An attractive alternative to the simple phase array is its combination with the \ac{mimo} concept \cite{fishler_mimo_2004}. 
 
-As the name implies, a \ac{mimo} radar consists of multiple transmit (TX) antennas and receive (RX) antennas. Given $M_t$ transmit and $M_r$ receive elements in an array, $M_t\times M_r$ propagation channels are obtained. This, with only $M_t
-M_r$ antenna elements. Furthermore, a method to define the diversity of the TX channels is required. This can be achieved by employing time division multiplexing, frequency division multiplexing, spatial coding, and orthogonal waveforms \cite{huang_fmcw_2011}. 
+As the name implies, a \ac{mimo} radar consists of multiple transmit (TX) antennas and receive (RX) antennas. $M_t$ transmit and $M_r$ receive elements are assumed. The difference from the phase array radar is that the signals transmitted by each of the TX elements are diversified, leading to $M_t\times M_r$ propagation channels. This, with only $M_t + M_r$ antenna elements. With this concept, a higher performance with a substantially lower cost can be achieved, which is why the \ac{mimo} array has been chosen for the purpose of this thesis. 
 
-Each of the  $M_t\times M_r$ propagation channels are modeled together as a virtually form array. Each element in the virtual array is placed at 
+Several methods to the define the diversity of the TX channels have been proposed, these include frequency division multiplexing, spatial coding, orthogonal waveforms and time division multiplexing. The latter has been chosen and implemented as presented in \cite{huang_fmcw_2011}. As the name indicates and as presented in \cref{fig:tdm}, the concept time division multiplexing consists in switching the transmit antenna at each consecutive pulse. Hereby, one is able to differentiate at the receiver from which TX element is the signal coming simply by looking at the time of reception, which is important for the estimation of the azimuth profile (\cref{bs:azimuth}).
+
+
+\begin{figure}[h!]
+	\centering
+	\input{fundamentals_figs/blank.tex}
+	\caption{Time division multiplexing for \Ac{mimo}-radar.}
+	\label{fig:tdm}
+\end{figure} 
+
+
+A further design concern is the array manifold. Different array forms can be found in literature, where the most common are the uniform linear array (ULA) and the uniform circular array (UCA) \cite{zhang_blind_2009}, which are depicted in \cref{fig:ula,fig:uca}. As the name indicates, this manifolds consists of equidistant antenna elements in either linear or circular form. The MIMO-radar chosen here consists in 2 TX and 4 RX array resulting in 8 virtual channels.
+
+\begin{figure}[h!]
+	\centering
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\input{fundamentals_figs/blank2.tex}
+		\captionof{figure}{Uniform Linear Array (ULA).}
+		\label{fig:ula}
+	\end{minipage}%
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\input{fundamentals_figs/blank2.tex}
+		\captionof{figure}{Uniform Circular Array (UCA).}
+		\label{fig:uca}
+	\end{minipage}
+\end{figure}
+
+If the far-field condition is satisfied, the \Ac{mimo}-configuration can be modeled as an ULA of  $M_t\times M_r$ virtual antennas. Given the position of the TX-elements $x_i^{Tx}$ and RX-elements $x_j^{Rx}$ the virtual ULA is modeled by antenna elements at 
+
 \begin{equation}
-	\vec{x_{ij}} = (\vec{x}_i^{Tx}+\vec{x}_j^{Rx})/2\\,
+\vec{x_{ij}} = (\vec{x}_i^{Tx}+\vec{x}_j^{Rx})/2\\,
 \end{equation}
-where $\vec{x}_i^{Tx}$ is the position of the $i$-TX element and $\vec{x}_j^{Rx}$ of the $j$-RX element, as shown in \cref{fig:mimo_array}
+for $i = 1,...,M_t$ and $j = 1,...,M_r$. Presented in \cref{fig:mimo_array} is a \Ac{mimo}-setup with its corresponding virtual elements. Note that for this work the TX and RX elements are aligned in the vertical axis. This has been ignored here for better illustration. 
 
 \begin{figure}[h]
 	\centering
@@ -15,8 +44,8 @@ where $\vec{x}_i^{Tx}$ is the position of the $i$-TX element and $\vec{x}_j^{Rx}
 	\caption{\ac{mimo}-array}
 		\label{fig:mimo_array}
 \end{figure} 
-
- If the far-field condition is met for a given scatterer at position $\vec{p}$, the signal propagation path from a given TX element to the scatterer, plus the reflection path back to an RX element can be approximated as
+ 
+ Under the described conditions the signal propagation path from a given TX element to a scatterer at point $\vec{p}$, plus the reflection path back to an RX element can be approximated as
  \begin{equation}
- 	P_{ij}(p) = |\vec{p}-\vec{x}_i^{Tx}| + |\vec{p}-\vec{x}_j^{Rx}| \approx 2|\vec{p}-\vec{x}_{ij}| 
+ 	P_{ij}(p) = |\vec{p}-\vec{x}_i^{Tx}| + |\vec{p}-\vec{x}_j^{Rx}| \approx 2|\vec{p}-\vec{x}_{ij}| \\.
  \end{equation}

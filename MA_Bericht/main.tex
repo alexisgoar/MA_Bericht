@@ -123,7 +123,8 @@ captions=tableabove,twoside, openright]{scrreprt}
 \newcommand*\diff{\mathop{}\!\mathrm{d}}
 \newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
 \newcommand*{\Expc}{\mathbf{E}}
-
+\newcommand*{\diag}  {\operatorname{diag}}
+%\newcommand*{\max}  {\operatorname{max}}
 \addto\captionsenglish{%
 	\renewcommand{\figurename}{Figure}%
 }
@@ -174,10 +175,14 @@ captions=tableabove,twoside, openright]{scrreprt}
  \input{fundamentals/mimo}
 \section{Signal Model}\label{bs:signal}
 \input{fundamentals/signal}
-
-\section{Ranging}\label{bs:ranging}
-\section{Doppler Ranging}\label{bs:dopplerRanging}
+\section{Range and Range-Rate Estimation}\label{bs:range}
+\input{fundamentals/range}
 \section{Azimuth Estimation}\label{bs:azimuth}
+\input{fundamentals/azimuth}
+\subsection{Conventional Beamforming}
+\input{fundamentals/azimuth_conv}
+\subsection{The MUSIC-algorithm}
+\input{fundamentals/azimuth_music}
 \section{Detection Theory}\label{bs:detection}
 \chapter{Clustering}\label{ch:cluster}
 \input{clustering/Into}

@@ -1,4 +1,4 @@
-For the following analyses a \Ac{fmcw} Radar is taken into consideration. The TX array elements transmit a \Ac{fmcw} chirp signal, that can be modeled in as
+For the following analyses a \Ac{fmcw} signal model is taken into consideration. As the name indicates, the \ac{fmcw} radar transmits a signal continuously, from which the frequency is increased with time. For \Ac{mimo} radars, as explained before, the antennas do not transmit continuously given that they are switched after each cycle. For a linear increase of the frequency, the \Ac{fmcw}-chirp signal transmitted by each of the TX elements can be modeled as 
 \begin{equation}
 	s_T(t) = \exp[\mj(2\pi f_ct+\pi kt^2)]\\,
 \end{equation}
@@ -6,29 +6,33 @@ for $-T_c/2 \leq t \leq T_c/2$, where $T_c$ is the chirp duration, $f_c$ the car
 \begin{equation}
 	k = \pm B/T_c\\.
 \end{equation}
-Under far-field condition, the return delay between a virtual element at $x_{ij}$ and a scatterer is given by
+
+Under far-field conditions, the return echo caused by an object located ar rang $R$ and an angle of $\theta$ with respect to the boresight, i.e. $(x,y) = (R\cos\theta,R\sin\theta)$, can be simplified to
 \begin{equation}
-	\Delta t_{ij} = \frac{2R}{c_0} + \frac{2x_{ij}\sin\theta}{c_0}\\,
+	\Delta t_{ij} = \frac{2R}{c} + \frac{2x_{ij}\sin\theta}{c}\\,
 \end{equation}
-where $R$ and $\theta$ describe the location of the scatterer, $R$ being the rang and $\theta$ the angle with respect to boresight. The received signal 
+for the virtual element obtained from the $i$-th TX element and $j$-th RX element. The received signal results in 
 \begin{equation}
-	s_R^{ij}(t) = As_t(t-\Delta t_{ij})
+	s_R(t) = As_t(t-\Delta t_{ij})\\,
 \end{equation}
-After the signal is received, it is down-converted by multiplying it with a replica of the transmitted signal. After low-pass filtering, the processed signal can be modeled as 
+where the dependency of $s_R(t) = s_R^{ij}(t) $ on $i$ and $j$ has been omitted for clear notation. 
+
+Once the signal is received, it is down-converted in a pre-processing step by multiplying it with a replica of the transmitted signal. The outcome of the multiplication results in a component at \ac{if} frequency, and an undesired component at a higher frequency. After low-pass filtering, the processed signal is
 \begin{equation}
-	u_{ij}(t) = s_R^{ij}s_T(t) = A\exp[\mj(2\pi k \Delta t_{ij}t-\pi k\Delta  t_{ij}^2 + 2\pi f_c \Delta t_{ij})]
+	u_{ij}(t) = s_R^{*}s_T(t) = A\exp[\mj(2\pi k \Delta t_{ij}t-\pi k\Delta  t_{ij}^2 + 2\pi f_c \Delta t_{ij})]\\.
 \end{equation}
+
 The sampled form of the \ac{if} signal given $N$ samples can be expressed as
 \begin{equation}
 	u_{ij}[n] = A\exp[\mj(\phi+2\pi\Psi_R n)]\\,
 \end{equation}
-with $\Psi_R = k\Delta t_{ij}\frac{T_c}{N} $,the normalized frequency containing the range information and $\phi = -\pi k\Delta  t_{ij}^2 + 2\pi f_c \Delta t_{ij} $ contains the phase information. This expression can be generalized to \ac{mimo} radar, with $M$ targets either static or dynamic, for the $k$-th observation interval by
+where $\Psi_R = k\Delta t_{ij}\frac{T_c}{N} $ is the normalized frequency containing the range information and $\phi = -\pi k\Delta  t_{ij}^2 + 2\pi f_c \Delta t_{ij} $ contains the phase information. This expression can be generalized to \ac{mimo} radar for the $k$-th observation interval by
 \begin{equation}\label{eq:signal}
-	u_{k}[n,n_C,n_A] = \sum_{m=0}^{M}A_m\exp[\mj2\pi(\phi_m+\Psi_{R,m}n+\Psi_{D,m}n_C+\Psi_{\theta,m}n_A)] + w[n,n_C,n_A]
+	u_{k}[n,n_C,n_A] = \sum_{m=0}^{M}A_m\exp[\mj2\pi(\phi_m+\Psi_{R,m}n+\Psi_{D,m}n_C+\Psi_{\theta,m}n_A)] + w[n,n_C,n_A]\\,
 \end{equation}
-where $\Psi_D = \frac{2T_cf_0}{c_0}v_R$ and $\Psi_\theta =\sin(\theta)/2 $ are the normalized frequencies containing the information about range-rate and azimuth. Moreover, $w[n,n_C,n_A]$ is the present additive white Gaussian measurement noise. The parameters $n$, $n_C$ and $n_A$ represent which, sample chirp and antenna is being taken into account. Please note that $\phi_m$ does not correspond to $\phi$.
+where $\Psi_D = \frac{2T_cf_0}{c_0}v_R$ and $\Psi_\theta =\sin(\theta)/2 $ are the normalized frequencies containing the information about range-rate and azimuth. Moreover, $w[n,n_C,n_A]$ is the present additive white Gaussian measurement noise. The parameters $n$, $n_C$ and $n_A$ represent which sample, chirp, and antenna is being taken into account. Please note that $\phi_m$ does not correspond to $\phi$.
 
-The information collected from \cref{eq:signal} is usually arrange into a three-dimensional data cube as presented in \cref{fig:datacube}. Here the dimensions correspond to sample number, transmit-receive channel and chirp number. 
+The information collected from \cref{eq:signal} is usually arranged into a three-dimensional data cube as presented in \cref{fig:datacube}. Each of the dimensions correspond to a certain parameter that has to be estimated. The first dimension, contains the $N$ samples of a pulse. This information corresponds to the range estimation (\cref{bs:ranging}). The second dimension, stores the signal received by the each of the virtual elements for the same pulse. A variety of algorithms exists to process the data in this dimension and obtain and estimate for the azimuth profile (\Cref{bs:azimuth}). Finally, the third dimension, contains multiple pulses. In other words, for a single virtual channel and range bin, the third dimension contains the received signal each time the cycle of pulses being transmitted restarts, i.e. each $T_cN_t$ seconds. 
 
 \begin{figure}[h]
 	\centering
@@ -41,5 +45,9 @@ In order to estimate the spectrum of the received signal and so to determine the
 \begin{multline}
 \hat{P}_k(\Psi_R,\Psi_D\Psi_\theta) = \sum_{n}\sum_{n_C}\sum_{n_A} a_R[n] a_D[n_C] a_\theta[n_A]u_k[n,n_A,n_C]\\
 \times\exp(-\mj2\pi\Psi_Rn)\exp(-\mj2\pi\Psi_Dn_C)\exp(-\mj2\pi\Psi_\theta n_A) \rlap{,}
+\end{multline}
+\begin{multline}
+\hat{P}_k(\Psi_R,\Psi_D) = \sum_{n}\sum_{n_C}\sum_{n_A} a_R[n] a_D[n_C] u_k[n,n_A,n_C]\\
+\times\exp(-\mj2\pi\Psi_Rn)\exp(-\mj2\pi\Psi_Dn_C) \rlap{,}
 \end{multline}
 however, this usually results in a bad estimation for the azimuth range. Specifics of the signal processing will be described in the following sections. 
