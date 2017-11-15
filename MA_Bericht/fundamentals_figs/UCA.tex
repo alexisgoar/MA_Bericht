@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+% Reference Grid
+\draw[white,very thin] (0,0) grid (5,5); 
+
+   \tikzstyle{tx} = [draw, shape=rectangle, minimum height=0.1cm, minimum width=0.1cm, node distance=0.0005cm and 0.0005cm, line width=1pt, fill = blue]
+\tikzstyle{rx} = [draw, shape=rectangle, minimum height=0.1cm, minimum width=0.1cm, node distance=0.0005cm and 0.0005cm, line width=1pt, fill = red]
+\tikzstyle{virt} = [draw, shape=rectangle, minimum height=0.1cm, minimum width=0.1cm, node distance=0.0005cm and 0.0005cm, line width=1pt, fill = black]
+
+
+\draw[dotted] (3,2.5)--(5,4.5); 
+
+\draw[->] (0,2.5) -- (6,2.5) node[anchor=north] {$x$}; 
+\draw[->] (3,0) -- (3,5) node[anchor=east] {$y$}; 
+
+\node at (2.8,2.3) [ label = right: \footnotesize $0$] (){}; 
+
+\draw[gray](3,2.5)circle(2.0cm); 
+
+ \draw (3.5,2.5) arc (0:45:0.5);
+ \node at (4,3.25) [label = below: \footnotesize $2\pi/L$](){}; 
+
+
+\node at (3,4.5)[tx](){}; 
+\node at (3,0.5)[tx](){};
+\node at (1,2.5)[tx](){};
+\node at (5,2.5)[tx](){};   
+\node at (1.6,3.9)[tx](){};
+\node at (4.4,3.9)[tx](){};
+\node at (1.6,1.1)[tx](){};
+\node at (4.4,1.1)[tx](){};
+
+\end{tikzpicture}

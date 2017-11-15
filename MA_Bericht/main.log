@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  14 NOV 2017 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  15 NOV 2017 13:40
 entering extended mode
 **./main.tex
 (main.tex
@@ -2804,29 +2804,34 @@ LaTeX Warning: Reference `bs:ranging' on page 1 undefined on input line 3.
 LaTeX Warning: Reference `bs:dopplerRanging' on page 1 undefined on input line 
 3.
 
+
+LaTeX Warning: Reference `bs:detection' on page 1 undefined on input line 3.
+
 ) (fundamentals/def.tex (fundamentals_figs/unambiguous_range.tex) [3]
 (fundamentals_figs/doppler.tex))
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(fundamentals/mimo.tex [4] (fundamentals_figs/blank.tex) [5]
-(fundamentals_figs/blank2.tex) (fundamentals_figs/blank2.tex)
-(fundamentals_figs/mimo.tex)) (fundamentals/signal.tex [6]
+(fundamentals/mimo.tex [4] (fundamentals_figs/mimo2.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(fundamentals_figs/ULA.tex) (fundamentals_figs/UCA.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5] (fundamentals_figs/mimo.tex)) (fundamentals/signal.tex [6]
 
 LaTeX Warning: Reference `bs:ranging' on page 1 undefined on input line 35.
 
 [7] (fundamentals_figs/cube.tex)) (fundamentals/range.tex
-(fundamentals_figs/cube.tex)
+(fundamentals_figs/cube2.tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (fundamentals/azimuth.tex [8] [9]) (fundamentals/azimuth_conv.tex
-(fundamentals_figs/blank.tex)) (fundamentals/azimuth_music.tex
-(fundamentals_figs/blank.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [10] [11] [12
+(fundamentals_figs/blank.tex)) (fundamentals/azimuth_music.tex [10]
+(fundamentals_figs/blank.tex)) [11] [12
 
 
 ]
@@ -2925,10 +2930,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 43927 strings out of 493323
- 889020 string characters out of 3139056
- 1056374 words of memory out of 3000000
- 46645 multiletter control sequences out of 15000+200000
+ 44022 strings out of 493323
+ 891154 string characters out of 3139056
+ 1057227 words of memory out of 3000000
+ 46736 multiletter control sequences out of 15000+200000
  661140 words of font info for 191 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,77p,10365b,1670s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2944,7 +2949,7 @@ onts/type1/public/kpfonts/jkpmsc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/kpfonts/jkpsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/latxfont/line10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/symbols/msam10.pfb>
-Output written on main.pdf (44 pages, 197209 bytes).
+Output written on main.pdf (44 pages, 198664 bytes).
 PDF statistics:
  197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

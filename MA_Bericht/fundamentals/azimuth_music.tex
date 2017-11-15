@@ -1,3 +1,16 @@
+Based on the previous decomposition, the MUSIC algorithm takes advantage of the fact that the eigenvector in $\matrix{U}_n$ are orthogonal to the steering matrix $\matrix{A}$, i.e
+\begin{equation}
+	\matrix{U}_n^H\vec{a}(\theta) = 0\\, \quad \theta \in \left\{\theta_1,...,\theta_M\right\}
+\end{equation}
+
+
+
+The MUSIC "spatial spectrum" is defined as 
+
+\begin{equation}
+	P_M (\theta) = \frac{\vec{a}^H(\theta)\vec{a}(\theta)}{\vec{a}^H(\theta)\matrix{\Pi}^\bot\vec{a}(\theta)}
+\end{equation}
+
 \begin{figure}[h!]
 	\centering
 	\input{fundamentals_figs/blank.tex}

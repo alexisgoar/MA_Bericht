@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+% Reference Grid
+
+   \tikzstyle{virt} = [draw, shape=rectangle, minimum height=0.1cm, minimum width=0.1cm, node distance=0.0005cm and 0.0005cm, line width=1pt, fill = black]
+   
+\draw[gray,very thin,step = 0.5] (7.49,0) grid (11.5,4); 
+%\draw[gray,very thin,step = 0.5] (9.49,2) grid (13.5,6); 
+
+\foreach \x in {7.5,8,...,11.5}
+    \draw[gray,very thin] (\x,4)--($(\x,4)+(2,2)$); 
+    
+\foreach \x in {0,0.5,...,4}
+    \draw[gray,very thin] (11.5,\x)--($(11.5,\x)+(2,2)$); 
+    
+\foreach \x in {0.1,0.2,...,1}
+    \draw[gray,very thin] ($(11.5,4)!\x!(13.5,6)$)-- ($(11.5,0)!\x!(13.5,2)$); 
+    
+\foreach \x in {0.1,0.2,...,1}
+\draw[gray,very thin] ($(11.5,4)!\x!(13.5,6)$)-- ($(7.5,4)!\x!(9.5,6)$);     
+
+
+\node at (7.5,2) [anchor = south,rotate = 90] {Sample}; 
+\node at (12.5,1) [anchor = north, rotate = 45, align = center] {Pulse}; 
+\node at (7.5,0) [anchor = south,rotate = 90]{$1$}; 
+\node at (7.5,4) [anchor = south, rotate=90] {$N$}; 
+\node at (11.5,0) [anchor = north, rotate = 0]{1}; 
+\node at (13.7,1.8) [anchor = north]{$N_C$}; 
+
+\draw[->] (4,3)-- (4,4)node[anchor=south,rotate = 90] {\footnotesize Fast-Time}; 
+\draw[->] (4,3)-- (4.7,3.7)node[anchor=north,rotate = 45] {\footnotesize Slow-Time}; 
+\draw[->] (6,0.2)--(6,3.8) ; 
+\node at (6,2)[anchor = south,rotate =90](){FFT}; 
+\draw[->] (13.5,0.2)--(15.5,2.2); 
+\node at (14.5,1.2)[anchor = north,rotate =45](){FFT}; 
+\end{tikzpicture}
