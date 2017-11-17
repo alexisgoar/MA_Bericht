@@ -1,0 +1,10 @@
+After a correct algorithm for multi-target tracking has been implemented, one has to generate an input for the classifiers, which are presented in \cref{ch:cl}. Different characteristics of each of the tracks have been used in literature for classification for various purposes. An overview of the different features that have been used as an input for classifiers is presented in \cref{fe:overview}. The possible selection of features is vast, however given the increase in computation each feature extraction one should select the features resulting in a more reliable classification. This is not straightforward, since the performance of each feature for classification is application-dependent. For each track $j$ at time step $k$ we first generate the $n$-tupel
+\begin{equation}
+	\breve{v}_j[k] = \left(\hat{\Psi}_{D,1},\hat{\Psi}_{D,2},\hat{\Psi}_{D,3},...,\hat{\Psi}_{D,L}\right) \\,
+\end{equation}
+containing the normalized range-rated obtained from all clusters contributing to the track.  Other features are stored in $n$-tupels with elements corresponding to the ones in $\breve{v}_j[k]$ as
+\begin{equation}
+	\breve{a}_j[k] = \left(\hat{a}_{1},\hat{a}_{2},\hat{a}_{3},...,\hat{a}_{L}\right) \\.
+\end{equation}
+
+Given that the purpose of this thesis is the classify objects according to their micro-Doppler spectrum, the micro-Doppler effect is explained in detail in \cref{fe:mdoppler}, and some measurement results presenting the micro-Doppler spectrum of pedestrians are given in \cref{fe:results}. 

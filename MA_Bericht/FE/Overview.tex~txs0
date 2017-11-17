@@ -1,0 +1,25 @@
+The amount of features that have been used for classification in literature is vast \cite{kim_human_2009,narayanan_radar_2015}. 
+
+Cluster Related Features
+\begin{description}[font=$\bullet$\normalfont]
+	\item [Extent of Target] 
+	\item [Size of Clusters]
+\end{description}
+
+Kalman Filter Related Features
+\begin{description}[font=$\bullet$\normalfont]
+	\item [Matrix $\matrix{P}$] 
+	\item [Matrix $\matrix{Q}$]
+\end{description}
+
+Micro-Doppler Related Features  \cite{narayanan_radar_2015}
+\begin{description}[font=$\bullet$\normalfont]
+	\item [The total BW of the Doppler Signal] 
+	\item [The STD of the Doppler Signal]
+	\item [The micro-Doppler Period]
+	\item [The micro-Doppler Energy]
+\end{description}
+
+Features for classifying human-activities 
+
+

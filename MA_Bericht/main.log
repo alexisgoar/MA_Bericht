@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  15 NOV 2017 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.25)  17 NOV 2017 13:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -2767,14 +2767,11 @@ d-to.pdf>]) [1
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 15
 9.
- (main.toc)
+ (main.toc [7])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [7] [8
-
-
-]
+ [8]
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -2791,7 +2788,10 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-(intro/Intro.tex (intro_figs/overview.tex)) [1] [2
+(intro/Intro.tex (intro_figs/overview.tex)) [1
+
+
+] [2
 
 
 ]
@@ -2873,25 +2873,38 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (fundamentals_figs/blank2.tex) (fundamentals_figs/blank2.tex)) [21] [22]
 chapter 5.
-[23
+(FE/init.tex) (FE/mdoppler.tex (fundamentals_figs/blank.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (FE/Overview.tex [23
 
 
-] [24
+] (fundamentals_figs/blank.tex)
+(fundamentals_figs/blank.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(fundamentals_figs/blank.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [24] [25] [26
 
 
 ]
 chapter 6.
-[25] [26
-
-
-]
-chapter 7.
 [27] [28
 
 
 ]
-chapter 8.
+chapter 7.
 [29] [30
+
+
+]
+chapter 8.
+[31] [32
 
 
 ]
@@ -2916,24 +2929,24 @@ Overfull \hbox (24.05273pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
 
-) [31] [32
+) [33] [34
 
 
 ]
 chapter B.
-[33] (main.bbl [34
+[35] (main.bbl [36
 
 
-]) [35] (main.aux)
+]) [37] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 44022 strings out of 493323
- 891154 string characters out of 3139056
- 1057227 words of memory out of 3000000
- 46736 multiletter control sequences out of 15000+200000
+ 44065 strings out of 493323
+ 891918 string characters out of 3139056
+ 1057422 words of memory out of 3000000
+ 46762 multiletter control sequences out of 15000+200000
  661140 words of font info for 191 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,77p,10365b,1670s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2941,17 +2954,18 @@ Here is how much of TeX's memory you used:
 rogram Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/kpfonts/jkpbmi.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/kpfonts/jkpbn8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kp
-fonts/jkpex.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmi.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/kpfonts/jkpmsc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/kpfonts/jkpsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/latxfont/line10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/symbols/msam10.pfb>
-Output written on main.pdf (44 pages, 198664 bytes).
+fonts/jkpbne.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpex.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/kpfonts/jkpmite.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/kpfonts/jkpmn8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/kpfonts/jkpmne.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfon
+ts/jkpmsc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpsy.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (46 pages, 211494 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
+ 211 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  14866 words of extra memory for PDF output out of 17280 (max. 10000000)
 

@@ -27,9 +27,13 @@
 \contentsline {subsection}{\numberline {4.5.1}Track Confirmation}{22}
 \contentsline {subsection}{\numberline {4.5.2}Track Deletion}{22}
 \contentsline {section}{\numberline {4.6}Maneuver Detection and Adaptive Filtering}{22}
-\contentsline {chapter}{\numberline {5}Micro-Doppler Signatures}{23}
-\contentsline {chapter}{\numberline {6}Classification}{25}
-\contentsline {chapter}{\numberline {7}Results}{27}
-\contentsline {chapter}{\numberline {8}Summary and Outlook}{29}
-\contentsline {chapter}{Appendix \numberline {A}Symbols and Constants}{31}
-\contentsline {chapter}{Appendix \numberline {B}Mathematical Formulas}{33}
+\contentsline {chapter}{\numberline {5}Feature Extraction}{23}
+\contentsline {section}{\numberline {5.1}The Micro-Doppler Effect}{23}
+\contentsline {section}{\numberline {5.2}Overview of Features}{23}
+\contentsline {section}{\numberline {5.3}Results}{25}
+\contentsline {chapter}{\numberline {6}Classification}{27}
+\contentsline {section}{\numberline {6.1}Support Vector Machine}{27}
+\contentsline {chapter}{\numberline {7}Results}{29}
+\contentsline {chapter}{\numberline {8}Summary and Outlook}{31}
+\contentsline {chapter}{Appendix \numberline {A}Symbols and Constants}{33}
+\contentsline {chapter}{Appendix \numberline {B}Mathematical Formulas}{35}
